@@ -1,0 +1,272 @@
+/* 這一頁是做動畫 */
+
+/* 滑鼠碰到元素讓元素變大的效果*/
+.sizeHoverEffect {
+  transition: all 0.1s ease;
+}
+.sizeHoverEffect:hover {
+  transform: scale(1.3);
+}
+/* 滑鼠碰到元素讓元素背景透明度變低 */
+.opacityHoverEffect {
+  transition: all 0.1s ease;
+}
+.opacityHoverEffect:hover {
+  opacity: 0.7;
+}
+
+
+/* 滑鼠碰到元素讓元素變大的效果，以及背景透明度變低 */
+.sizeOpacityHoverEffect {
+  transition: all 0.1s ease;
+}
+
+.sizeOpacityHoverEffect:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+/* 滑鼠碰到元素讓元素往右下滑動，將boxshadow移除*/
+
+.bannerTransformShadowHoverEffect{
+  transition: all 0.1s ease;
+}
+.bannerTransformShadowHoverEffect:hover{
+  transform: translate(1px, 1px);
+  box-shadow: none;
+}
+/* 滑鼠碰到元素讓元素往上滑動，以及背景透明度變低*/
+.bannerTransformOpacityHoverEffect {
+  transition: all 0.1s ease;
+}
+.bannerTransformOpacityHoverEffect:hover{
+  transform: translate(0px, -2px);
+  opacity: 0.7;
+}
+
+/* 滑鼠碰到元素讓元素往上滑動，元素內部的箭頭往右上移動*/
+
+.bannerTransformArrowHoverEffect {
+  transition: all 0.1s ease;
+}
+.bannerTransformArrowHoverEffectArrow{
+  transition: all 0.1s ease;
+}
+.bannerTransformArrowHoverEffect:hover {
+  transform: translate(0px, -2px);
+}
+.bannerTransformArrowHoverEffect:hover .bannerTransformArrowHoverEffectArrow {
+  transform: translate(1px, -1px);
+}
+
+/* 滑鼠碰到元素讓元素往上滑動，元素變透明，箭頭往由上右移動*/
+.bannerTransformOpacityArrowHoverEffect {
+  transition: all 0.1s ease;
+}
+.bannerTransformOpacityArrowHoverEffectArrow {
+  transition: all 0.1s ease;
+}
+.bannerTransformOpacityArrowHoverEffect:hover {
+  transform: translate(0px, -4px);
+  opacity: 0.7;
+}
+.bannerTransformOpacityArrowHoverEffect:hover .bannerTransformOpacityArrowHoverEffectArrow{
+  transform: translate(2px, -6px);
+}
+
+
+/* header search button點了之後讓input出現與消失的動畫 */
+
+#headerSearchInputContainer {
+  opacity: 0;
+  clip-path: inset(0 100% 0 0);
+  transition: opacity 3s ease, transform 3s ease;
+}
+#headerSearchInputContainer.show {
+  opacity: 1;
+  clip-path: inset(0 0 0 0);
+}
+
+
+/* 第一次渲染的主頁元素特效 */
+
+@keyframes zoomIn1 {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.zoomInBanner {
+  animation: zoomIn1 0.5s ease-out forwards;
+}
+
+/* 主頁右上紅色的票務資訊 */
+
+#bannerTicketsInformation {
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+#homebannerTicketInformation:hover #homebannerTicketInformationCard {
+  transform: translate(5px, 5px);
+  box-shadow: none;
+}
+
+#homebannerTicketInformation:hover #bannerTicketInformationArrow {
+  transform: translate(5px, -5px);
+}
+
+
+/* 主頁左下角的scroll */
+
+@keyframes revealAndDisappear {
+    0% {
+      stroke-dasharray: 0, 100;
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+    99% {
+      stroke-dasharray: 100, 0;
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+    100% {
+      stroke-dasharray: 100, 0;
+      stroke-dashoffset: 0;
+      opacity: 0;
+    }
+  }
+  
+#scrollLine {
+    animation: revealAndDisappear 3s infinite;
+}
+
+
+/* 主頁右下的圖卡輪流撥放 */
+#bannerCard1 {
+  animation: bannerCard1Animation 10s infinite;
+}
+
+#bannerCard2 {
+  animation: bannerCard2Animation 10s infinite;
+}
+
+
+#bannerCard1 { left: 50%; scale: 1.1; z-index: 2; }
+#bannerCard2 { left: 60%; scale: 1.0; z-index: 1; }
+
+
+@keyframes bannerCard1Animation {
+  0%, 50%{
+    left: 50%;
+    scale: 1.1;
+    z-index: 2;
+  }
+  51%, 99% { 
+    left: 40%;
+    scale: 1.0;
+    z-index: 1;
+  }
+  100% {
+    left: 50%;
+    z-index: 2;
+  }
+}
+
+
+@keyframes bannerCard2Animation {
+  0%, 50%{
+    left: 60%;
+    scale: 1.0;
+    z-index: 1;
+  }
+  51%, 99% { 
+    left: 50%;
+    scale: 1.1;
+    z-index: 2;
+  }
+  100% { 
+    left: 60%;
+    scale: 1.0;
+    z-index: 1;
+  }
+}
+
+/* 主頁下方的新聞圖卡 */
+
+.news-cards {
+  transition: transform 0.5s ease;
+}
+
+
+/* visit the expo背景動畫 */
+
+@keyframes rotateAndScale {
+  0% {
+    transform: scale(0.9) rotate(0deg);
+  }
+  20% {
+    transform: scale(1.1) rotate(60deg);
+  }
+  40% {
+    transform: scale(1.3) rotate(120deg);
+  }
+  60% {
+    transform: scale(1.1) rotate(60deg);
+  }
+  80% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(0.9) rotate(0deg);
+  }
+
+}
+
+.visitTheExpoBanner {
+  animation: rotateAndScale 30s infinite linear;
+}
+
+
+/* Enjoy Pavilions動畫 上左*/
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.pavilions-picture-animation {
+  display: flex;
+  animation: slide 51s infinite linear;
+}
+
+/* Enjoy Pavilions動畫 上右*/
+
+.fade {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0s;
+}
+
+.fade.show {
+  opacity: 1;
+}
+
+/* Enjoy Pavilions動畫 中間按鈕*/
+.enjoy-pavilions-cards {
+  transition: transform 0.5s ease;
+}

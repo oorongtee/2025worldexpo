@@ -1,0 +1,14 @@
+/* 這一頁是補充tailwindcss的一些自定義樣式 */
+
+.text-xxs {
+    font-size: 0.7rem;
+    line-height: 0.875rem;
+}
+
+.w-18{
+    width: 4.5rem;
+}
+.h-18{
+    height: 4.5rem;
+}
+

@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expo 2025</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="./definition.css" rel="stylesheet">
+    <link href="./animation.css" rel="stylesheet">
+    <link href="./effect.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {font-family: 'Roboto', sans-serif; 
+        overflow-x: hidden;
+      }
+    </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="header" class="fixed top-0 left-0 z-50 bg-gray-100 bg-opacity-50 text-black w-full h-14 flex">
+      <!-- Logo-->
+    <div class="absolute top-0 left-7 w-18 h-18 z-50">
+      <img src="../src/pic/logo-pc.webp" alt="Description of image">
+    </div>
+    <!-- Rwd的Logo-->
+    <div id="headerLogo768" class="absolute top-0 left-4 w-14 h-14 z-50 hidden">
+      <img src="../src/pic/logo-pc.webp" alt="Description of image">
+    </div>
+    <div class="absolute top-0 left-32 flex h-14">
+      <!-- 左邊兩選項 -->
+      <div class="flex justify-start flex-row container mx-auto gap-7">
+        <div class="footerUnderstandingExpo flex flex-col items-center justify-center py-6 relative">
+          <a class="text-xxs text-black whitespace-nowrap" href="https://www.cyberpunk.net/us/zh-tw/">Understanding Expo</a>
+          <!-- 偽元素-->
+          <div class="footerUnderstandingExpoBox z-30 bg-white hidden absolute top-full left-0">
+            <div class="flex flex-col gap-2 mx-2 my-4 w-40">
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-xxs">Overview</p>
+                <svg fill="#ff0000" height="10px" width="10px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve" stroke="#ff0000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_222_" d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z"></path> </g></svg>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-xxs">Purpose</p>
+                <svg fill="#ff0000" height="10px" width="10px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve" stroke="#ff0000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_222_" d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z"></path> </g></svg>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-xxs">MOVIE</p>
+                <svg fill="#ff0000" height="10px" width="10px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve" stroke="#ff0000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_222_" d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z"></path> </g></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footerAboutTheAssociation flex flex-col items-center justify-center py-6 relative">
+          <a class="text-xxs text-black whitespace-nowrap" href="https://www.cyberpunk.net/us/zh-tw/">About the Association</a>
+          <!-- 偽元素-->
+          <div class="aboutTheAsscioationBox z-30 bg-white hidden absolute top-full left-0">
+            <div class="flex flex-col gap-2 mx-2 my-4 w-40">
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-xxs">Overview</p>
+                <svg fill="#ff0000" height="10px" width="10px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve" stroke="#ff0000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_222_" d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z"></path> </g></svg>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-xxs">Purpose</p>
+                <svg fill="#ff0000" height="10px" width="10px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve" stroke="#ff0000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_222_" d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z"></path> </g></svg>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-xxs">MOVIE</p>
+                <svg fill="#ff0000" height="10px" width="10px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve" stroke="#ff0000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_222_" d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z"></path> </g></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 右邊icons -->
+    <div class="absolute top-0 right-6 flex h-14"> 
+      <div class="flex justify-start flex-row container mx-auto gap-2">
+        <div id="headerSearchInputContainer" class="flex items-center justify-center">
+          <input type="text" placeholder="Search" class="w-56 rounded-full bg-transparent border border-black h-8 pl-3 text-xs"/>
+        </div>
+        <div class="flex flex-initial items-center">
+          <button class="" onclick="headerSearchButton()">
+            <div class="sizeHoverEffect">
+              <svg class="h-7 w-7" version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve"><path fill="" d="M23,22l-4.5-4.5c0.9-1.1,1.4-2.5,1.4-4.1c0-3.6-2.9-6.6-6.6-6.6c-3.6,0-6.6,2.9-6.6,6.6s2.9,6.6,6.6,6.6c1.5,0,3-0.5,4.1-1.4L22,23c0.1,0.1,0.3,0.2,0.5,0.2s0.4-0.1,0.5-0.2C23.3,22.7,23.3,22.2,23,22z M8.3,13.4c0-2.8,2.3-5.1,5.1-5.1c2.8,0,5.1,2.3,5.1,5.1s-2.3,5.1-5.1,5.1C10.6,18.4,8.3,16.2,8.3,13.4z"></path></svg>
+            </div>
+          </button>
+        </div>
+        <div class="footerTickets flex flex-col items-center justify-center relative">
+          <a class="" href="https://www.expo2025.or.jp/en/tickets-index/">
+            <div class="sizeHoverEffect">
+              <svg class="h-7 w-7" version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve"><path fill="" d="M15.4,8.8l-0.6,0.6l-0.6-0.6l0.6-0.6l-3.3-3.3L9,7.4C9.5,7.8,9.5,8.6,9,9S7.8,9.5,7.4,9l-2.5,2.5l3.3,3.3l0.6-0.6l0.6,0.6l-0.6,0.6l9.7,9.7l2.5-2.5c-0.5-0.5-0.5-1.2,0-1.7s1.2-0.5,1.7,0l2.5-2.5L15.4,8.8z M10.5,13.7l-0.6-0.6l1.1-1.1l0.6,0.6L10.5,13.7z M12.7,11.6L12,10.9l1.1-1.1l0.6,0.6L12.7,11.6z"></path></svg>
+            </div>
+          </a>
+          <!-- 偽元素-->
+          <div class="ticketsBox z-30 absolute top-full right-1 hidden">
+            <div class="flex flex-col justify-center items-center">
+              <svg fill="#000000" width="8px" height="8px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M21,21H3L12,3Z"></path></g></svg>
+              <div class="bg-black text-white text-xxs h-4 w-10 flex justify-center items-center">
+                <p>Tickets</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-initial items-center">
+          <a href="https://www.expo2025.or.jp/en/expo-map-index/map/">
+            <div class="sizeHoverEffect">
+              <svg class="h-7 w-7" version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve"><path fill="" d="M15.3,5.5c-4-0.2-7.3,3-7.3,7c0,1.8,0.7,3.4,1.8,4.7c1.5,1.7,2.7,2.4,3.7,4.4l1.4,2.9l1.5-3c1-2,2.3-2.7,3.8-4.4c1.1-1.3,1.8-3,1.7-4.8C21.9,8.7,18.9,5.6,15.3,5.5z M15,14.4c-1,0-1.9-0.8-1.9-1.9c0-1,0.8-1.9,1.9-1.9c1,0,1.9,0.8,1.9,1.9C16.9,13.5,16,14.4,15,14.4z"></path></svg>
+            </div>
+          </a>
+        </div>
+        <div class="flex flex-initial items-center">
+          <a class="" href="https://expo2025shop.jp/" target="_blank">
+            <div class="sizeHoverEffect">
+              <svg class="h-7 w-7" version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve"><g><path d="M22,13.4c0.3,0,0.4-0.2,0.4-0.5s-0.2-0.4-0.5-0.4s-0.4,0.2-0.4,0.5C21.6,13.2,21.8,13.4,22,13.4z"></path><path d="M12.4,16.7c0.3,0,0.5-0.3,0.4-0.5c0-0.3-0.3-0.5-0.5-0.4c-0.3,0-0.5,0.3-0.4,0.5C11.9,16.5,12.1,16.7,12.4,16.7z"></path><path d="M14.2,7.1c0.2,0,0.4-0.2,0.4-0.5c0-0.2-0.2-0.4-0.5-0.4c-0.2,0-0.4,0.2-0.4,0.5C13.7,6.9,13.9,7.1,14.2,7.1z"></path><path d="M17.7,4.3c0.2,0,0.5,0.2,0.5,0.4c0,0.2-0.2,0.5-0.4,0.5c-0.2,0-0.5-0.2-0.5-0.4C17.3,4.6,17.5,4.3,17.7,4.3z"></path><path d="M17.8,5.2c0.2,0,0.4-0.2,0.4-0.5c0-0.2-0.2-0.4-0.5-0.4c-0.2,0-0.4,0.2-0.4,0.5C17.3,5,17.5,5.2,17.8,5.2z"></path><path d="M8.6,11.3c-0.2,0-0.3,0.2-0.3,0.3c0,0.2,0.2,0.3,0.3,0.3c0.2,0,0.3-0.2,0.3-0.3C9,11.4,8.8,11.2,8.6,11.3z"></path><g><path d="M18.1,18.1c-0.1,0-0.2-0.1-0.3-0.2c-0.3,0.1-0.7,0.1-0.6,0.5s0.8,0.4,0.9-0.1C18.1,18.2,18.1,18.1,18.1,18.1L18.1,18.1zM17.4,18.4L17.4,18.4c-0.2,0-0.3-0.2-0.1-0.3c0,0,0.2-0.1,0.2,0l0,0C17.6,18.2,17.5,18.4,17.4,18.4z"></path><path d="M17.1,16.6c0,0-0.1,0-0.2,0.1c0.1,0.1,0.2,0.1,0.3,0.2C17.1,16.8,17.1,16.6,17.1,16.6z"></path><path d="M17.5,17.7C17.5,17.7,17.6,17.7,17.5,17.7c0-0.1,0-0.1,0-0.2s-0.1-0.1-0.1-0.2c-0.2,0-0.4-0.1-0.5,0.1C16.6,17.7,17.3,18,17.5,17.7z"></path><path d="M16.5,18.9c0.1-0.5,0.2-1.2,0.2-2c-0.1,0-0.1,0.1-0.2,0.1c-0.2,0.1-0.6,0.1-1,0.1c-0.3,0-0.7-0.2-0.9-0.3c-0.3-0.2-0.3-0.3-0.3-0.3S14.1,16.8,14,17c-0.2,0.3-0.5,0.6-0.8,0.8c-0.2,0.1-0.7,0.3-1.1,0.3c-0.1,0-0.2,0-0.3,0c-0.3,0.5-0.5,0.8-0.7,1s-0.4,0.5-0.6,0.9c-0.2,0.4-0.4,1.2,0.1,2l0,0c-0.1,0.1-0.4,0.3-0.6,0.2c-0.5-0.2-0.2-0.3-0.9-0.6c-0.8-0.3-1.8,1-1.8,1.4c0,0.3,0.1,0.5,0.5,0.7c0.8,0.6,1.4,0,1.4,0c0.1-0.1,0.4-0.1,0.5-0.1s0.4,0.2,0.6,0.2c0.3,0.1,0.4,0.1,0.4,0.1c0.7,0.1,1.2-0.4,1.6-0.7c0.2,0,0.5,0.1,0.7,0.1c0,0.1,0.1,0.1,0.1,0.1c0.3,0.6-0.1,1.2-0.3,1.7c-0.1,0.3-0.6,0.5-0.1,1c0.4,0.4,1.5,0.5,2,0.4c0.4-0.1,0.9-0.2,0.9-0.4c0-0.2,0-0.4-0.3-0.6c-0.2-0.2-0.3-0.3-0.2-0.7c0.1-0.4,0.2-1-0.1-1.3c-0.2-0.2-0.3-0.4-0.4-0.5c0.1,0,0.2-0.1,0.3-0.2C15.6,22.3,16,21.2,16.5,18.9z M13.8,22.6c-0.3-0.2,0-0.4,0.7-0.7c0.6-0.3,0.8-1.2,1-0.8c0,0,0.1,0.5-0.5,1C14.5,22.5,14,22.7,13.8,22.6z"></path></g><path d="M19.1,17.9c0,0.1-0.1,0.1-0.2,0.2c-0.1,0-0.1,0-0.2,0v0.1c0,0.1,0,0.3,0.3,0.3c0.2,0,0.4-0.1,0.4-0.3C19.2,18.1,19.2,18,19.1,17.9z"></path><path d="M10.2,21.8C10,21.5,10,21.3,10,20.7c0-0.6,0.2-1,0.5-1.4c0.1-0.1,0.2-0.3,0.3-0.4c-0.8-0.3-1.6,0.5-1.7,1.4C9,21,9.5,21.8,10.2,21.9C10.2,21.9,10.2,21.8,10.2,21.8z"></path><path d="M23.1,13.1c-0.1-0.9-0.6-1.6-1.4-1.9c0.8-0.3,1.3-1,1.2-1.8c-0.1-1-0.9-1.7-1.9-1.6c-0.1,0-0.2,0-0.3,0.1c0.1-0.2,0.1-0.4,0.1-0.6c-0.1-0.8-0.8-1.4-1.7-1.4H19c0.1-0.3,0.1-0.5,0.1-0.8c-0.1-1-0.9-1.7-1.9-1.6c-0.8,0.1-1.4,0.7-1.5,1.5c-0.4-0.6-1.1-1-1.9-0.9c-1.1,0.1-1.9,1.1-1.8,2.2c0,0.1,0,0.2,0,0.2c-0.2,0-0.4,0-0.6,0c-0.9,0.1-1.7,0.6-1.6,1.2l0,0c-0.2,0-0.3-0.1-0.5,0C8.5,7.8,7.9,8.5,8,9.3c0,0.4,0.2,0.7,0.5,1c-0.8,0.4-1.3,1.2-1.2,2.1c0.1,1.2,1.2,2,2.4,1.9c0.1,0,0.3,0,0.4-0.1C10,14.5,10,14.9,10,15.3c0,0.1,0,0.2,0,0.2c0.1,0.7,0.5,1.3,1,1.6c0.3,0.2,0.7,0.4,1,0.4c0.1,0,0.2,0,0.4,0c0.8-0.1,1.5-0.7,1.8-1.5c0.4,0.5,1,0.8,1.7,0.7c0.6,0,1-0.3,1.3-0.7c0.2,0.8,0.6,1.5,1,1.6c0.1,0,0.2,0.1,0.3,0.1c0.1,0,0.1,0,0.2-0.1c0.4-0.2,0.7-0.7,0.8-1.5c0.1-0.3,0.1-0.7,0-1.1c0.4,0.3,0.9,0.4,1.5,0.4C22.3,15.4,23.2,14.3,23.1,13.1zM8.7,12.3c-0.4,0-0.8-0.3-0.8-0.7s0.3-0.8,0.7-0.8s0.8,0.3,0.8,0.7S9.1,12.3,8.7,12.3z M17.4,3.9c0.5,0,0.9,0.3,1,0.8c0,0.5-0.3,0.9-0.8,1c-0.5,0-0.9-0.3-1-0.8C16.5,4.3,16.9,3.9,17.4,3.9z M13.7,5.7c0.5,0,1,0.3,1,0.9c0,0.5-0.3,1-0.9,1c-0.5,0-1-0.3-1-0.9C12.8,6.2,13.2,5.7,13.7,5.7z M12.1,17.2c-0.6,0.1-1.2-0.4-1.3-1s0.4-1.2,1-1.3s1.2,0.4,1.3,1C13.2,16.6,12.7,17.1,12.1,17.2z M18.7,12.7c-0.2-0.2-0.4-0.3-0.6-0.3c-0.5,0-0.8,0.7-1,1.5c-0.4-0.4-0.9-0.6-1.5-0.5s-1.1,0.4-1.4,0.8c-0.4-1-1.3-1.7-2.2-1.6c-0.1,0-0.2,0-0.3,0.1c0.1-0.2,0.1-0.5,0.1-0.7c-0.1-0.7-0.5-1.4-1.1-1.7C10.8,10,11,9.5,11,9c0-0.2-0.1-0.3-0.1-0.4c0.2,0.1,0.5,0.1,0.8,0c0.7-0.1,1.2-0.4,1.5-0.7c0.3,0.2,0.7,0.3,1.1,0.2c0.4,0,0.8-0.2,1.1-0.4l0,0C15.5,8.5,16.2,9.1,17,9c0.5,0,0.9-0.3,1.1-0.7c0.3,0.4,0.8,0.6,1.4,0.6c0.1,0,0.1,0,0.2,0c-0.1,0.2-0.1,0.5-0.1,0.8c0.1,0.6,0.4,1.1,1,1.4C19.6,11.3,19,11.9,18.7,12.7z M21.7,13.9c-0.5,0-1-0.4-1.1-0.9c0-0.5,0.4-1,0.9-1.1c0.5,0,1,0.4,1.1,0.9C22.7,13.4,22.3,13.8,21.7,13.9z"></path><path d="M19.1,9.8c0-0.2,0-0.3,0-0.4c-0.4,0-0.8-0.2-1.1-0.4c-0.3,0.3-0.7,0.5-1.1,0.5c-0.8,0-1.6-0.5-1.9-1.2c-0.2,0.1-0.5,0.2-0.8,0.2s-0.7,0-1-0.1C12.9,8.7,12.3,9,11.7,9c-0.1,0-0.2,0-0.3,0c0,0.4-0.1,0.9-0.3,1.2c0.5,0.4,0.9,1,0.9,1.7c0,0.1,0,0.2,0,0.3h0.1c0.9,0,1.7,0.5,2.2,1.3c0.4-0.3,0.8-0.5,1.3-0.5s0.9,0.1,1.3,0.3c0.2-0.8,0.7-1.2,1.2-1.3c0.2,0,0.3,0,0.5,0.1c0.2-0.5,0.6-0.9,1.1-1.1C19.3,10.7,19.1,10.2,19.1,9.8z M15.3,12.3c-1.3,0-1.5-2.8-1.5-2.8s1.1,0.5,2,0.6c0.8,0.1,1.8-0.1,1.8-0.1S16.7,12.4,15.3,12.3z"></path><g><g><g><path d="M10.1,16.9C10,16.7,9.7,16,9.7,16s0-0.2,0-0.3c-0.5,0.1-1.1,0.2-1.7,0.1c-0.1-0.1-0.1-0.3,0-0.4c0.1-0.2,0.1-0.2,0.1-0.3S7.8,15,7.8,15c-0.2,0.1-0.2,0.2-0.2,0.3c0.5,0.3,0.7,0.9,0.6,1.5c0.1,0,0.1,0,0.2,0c0.5,0.1,1,0.3,1.5,0.5c0.1,0.1,0.2,0.2,0,0.2c-0.5-0.1-0.8-0.1-0.8,0.4c0,0.3,0.5,0.6,0.9,0.1c0.1-0.1,0.2-0.2,0.3-0.4c0.1-0.1,0.2-0.1,0.3-0.2C10.3,17.1,10.2,16.9,10.1,16.9z M9.2,17.8L9.2,17.8c-0.1,0-0.2-0.1-0.2-0.2c0-0.2,0.2-0.1,0.2-0.1c0.1,0,0.1,0.1,0.1,0.2C9.4,17.7,9.3,17.8,9.2,17.8z"></path></g><path d="M6.7,15c0.2,0,0.5,0.1,0.7,0.2c0.7,0.4,0.9,1.3,0.5,2l0.8,0.5l-2.4,4.8l-4.8-2.8l3-4.5l0.8,0.5c0.1-0.2,0.3-0.4,0.5-0.5c0,0-0.1,0.1-0.1,0.4c0,0.3,0,0.4,0,0.4l0,0l0,0l1.5,0.9l0.1-0.1c0.1-0.2,0.1-0.5,0.1-0.8l0,0c0,0,0,0,0-0.1l0,0c0-0.1-0.1-0.2-0.2-0.3l0,0l0,0c-0.2-0.2-0.4-0.4-0.4-0.4C6.8,15.1,6.8,15,6.7,15L6.7,15 M6,14.9L5.9,15c-0.2,0.1-0.3,0.2-0.5,0.4L4.7,15l-0.2-0.1l-0.1,0.2l-3,4.5l-0.1,0.2l0.2,0.1l4.8,2.8l0.2,0.1l0.1-0.2L9,17.8l0.1-0.2l-0.2-0.1l-0.7-0.4c0.3-0.8,0-1.6-0.7-2.1c-0.2-0.1-0.5-0.2-0.8-0.2l0,0H6.5C6.2,14.8,6,14.9,6,14.9z"></path></g><path d="M4.3,21.1C5.2,20,5,18.5,3.9,17.6c-0.2-0.2-0.4-0.3-0.7-0.4l-1.6,2.4L4.3,21.1C4.3,21.2,4.3,21.1,4.3,21.1z"></path></g><g><g><g><g><path d="M19.7,17.8L19.7,17.8l1,0.1c0.1-0.3,0.2-0.6,0.5-0.8c-0.4-0.1-0.9-0.3-1.1-0.4s-0.4-0.2-0.5-0.4c0,0.3-0.1,0.6-0.2,0.8c0.1,0.1,0.2,0.2,0.2,0.2s-0.2,0.4-0.3,0.5C19.4,17.8,19.6,17.8,19.7,17.8z"></path><path d="M22.1,16.9c-0.1,0.1-0.3,0.2-0.3,0.2l0,0c-0.3,0.1-0.4,0.3-0.5,0.6v0.1l0.8,0.1c0.4-0.1,0.5-0.2,0.7-0.4c0.1-0.1,0.1-0.1,0.1-0.2c0,0,0-0.1,0.1-0.1l0,0c0,0,0,0,0-0.1l0,0V17l0,0v-0.1c0-0.2-0.2-0.4-0.6-0.3C22.3,16.8,22.2,16.8,22.1,16.9z"></path><path d="M21.2,17c0.1-0.1,0.3-0.2,0.5-0.2c0-0.2-0.1-0.4-0.2-0.4s-0.2,0.2-0.2,0.4C21.3,16.8,21.3,16.9,21.2,17z"></path></g><path d="M22.1,16.7c0.1,0,0.2,0,0.3,0h0.1c-0.1,0-0.2,0.1-0.3,0.2c-0.1,0.1-0.3,0.2-0.3,0.2l0,0c-0.3,0.1-0.4,0.3-0.5,0.6v0.1l1.7,0.3V18c0-0.2,0-0.4-0.1-0.6c0.1-0.1,0.1-0.1,0.1-0.2s0-0.2,0-0.2c0.4,0.3,0.6,0.8,0.5,1.3l0.9,0.2l-0.6,5.3l-5.4-1l1.3-5.2l1,0.2C20.8,17.2,21.4,16.7,22.1,16.7 M22.6,16.6h-0.1l0,0h-0.1c-0.1,0-0.2,0-0.3,0l0,0v0.2v-0.2c-0.7,0-1.3,0.5-1.6,1.1l-0.8-0.1h-0.2v0.2L18.2,23l-0.1,0.2h0.2l5.4,1h0.2V24l0.6-5.3v-0.2h-0.2l-0.7-0.1c0-0.5-0.2-1-0.6-1.3l0,0c-0.1-0.1-0.1-0.1-0.2-0.2s-0.3-0.1-0.3-0.1L22.6,16.6z M22.1,17.2c0.1,0,0.1-0.1,0.2-0.1c0.1-0.1,0.2-0.1,0.2-0.1h0.4v0.2v0.1c0,0.1-0.1,0.1-0.1,0.2l-0.1,0.1l0.1,0.1c0.1,0.1,0.1,0.2,0.1,0.4l-1.3-0.2c0.1-0.2,0.2-0.3,0.4-0.4L22.1,17.2L22.1,17.2L22.1,17.2z"></path></g><path d="M21.4,23.3c0.4-1.3-0.3-2.7-1.5-3.1c-0.2-0.1-0.5-0.1-0.7-0.1l-0.7,2.8L21.4,23.3C21.4,23.4,21.4,23.4,21.4,23.3z"></path></g></g></g></svg>
+            </div>
+          </a>
+        </div>
+        <div class="flex flex-initial items-center">
+          <a class="" href="https://expo2025-wallet.com/en/" target="_blank">
+            <div class="sizeHoverEffect">
+              <svg class="h-7 w-7" version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve"><g><g><g><circle cx="20.4" cy="11.5" r="0.8"></circle></g><path d="M17.5,8.6c0.1-0.2,0.4-0.4,0.7-0.4h3.6c1.6,0,2.8,1.3,2.8,2.8c0,0.5-0.1,1-0.4,1.4l-5.4,9.3c-0.1,0.2-0.4,0.4-0.7,0.4h0c-0.3,0-0.5-0.2-0.7-0.4l-2.4-4.2L16,16l2.2,3.8l4.7-8.1c0.1-0.2,0.2-0.4,0.2-0.6c0-0.7-0.6-1.3-1.3-1.3h-3.1l-6.9,12c-0.1,0.2-0.4,0.4-0.7,0.4s-0.5-0.2-0.7-0.4L5,12.4C4.8,12,4.6,11.5,4.6,11c0-1.6,1.3-2.8,2.8-2.8h3.6c0.3,0,0.5,0.2,0.7,0.4l2.4,4.2l-0.9,1.6l-2.6-4.6H7.5c-0.7,0-1.3,0.6-1.3,1.3c0,0.2,0.1,0.4,0.2,0.6c0,0,0,0,0,0l4.7,8.1L17.5,8.6z"></path></g></g></svg>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="flex justify-start flex-row container mx-auto gap-6 ml-4">
+        <div class="flex items-center">
+          <ul class="flex flex-initial justify-start flex-row container mx-auto gap-1">
+            <li class="flex items-center justify-center h-full py-6"><a class="text-xxs text-slate-500" href="https://www.expo2025.or.jp/">JP</a></li>
+            <li class="flex items-center justify-center h-full py-6"><svg height="0.8rem" width="10"><line x1="5" y1="0" x2="5" y2="100%" style="stroke:rgb(0, 0, 0);stroke-width:1" /></svg></li>
+            <li class="flex items-center justify-center h-full py-6"><a class="text-xxs" href="https://www.expo2025.or.jp/en/">EN</a></li>
+          </ul>
+        </div>
+        <div class="flex items-center w-24">
+          <div class="sizeOpacityHoverEffect flex justify-center items-center bg-black bg-opacity-90 h-8 w-full rounded-full">
+            <a class="text-white text-xxs" href="https://www.expo2025.or.jp/en/inquiry/"><span class="">Inquiries</span></a>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <button class="sizeOpacityHoverEffect" aria-label="menu">
+            <svg class="h-10 w-10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve"><rect class="g-expo-nav-hamburger__svg__line1" x="5.6" y="7.5" fill="" width="28" height="0.9"></rect><rect class="g-expo-nav-hamburger__svg__line2" x="5.6" y="13" fill="" width="28" height="0.9"></rect><rect class="g-expo-nav-hamburger__svg__line3" x="5.6" y="18.5" fill="" width="28" height="0.9"></rect><g class="g-expo-nav-hamburger__svg__menu"><path fill="" d="M12.1,26.3c0.7,0,1.2,0.2,1.5,0.5s0.5,0.9,0.5,1.6v3.9H13v-3.7c0-0.5-0.1-0.8-0.3-1c-0.2-0.2-0.5-0.3-0.9-0.3c-0.5,0-0.9,0.2-1.2,0.5c-0.2,0.3-0.4,0.8-0.4,1.4v3.2H9.3v-3.7c0-0.3,0-0.6-0.1-0.8S9,27.5,8.8,27.4c-0.2-0.1-0.4-0.2-0.6-0.2c-0.4,0-0.7,0.1-0.9,0.2c-0.2,0.2-0.4,0.4-0.5,0.7c-0.1,0.3-0.1,0.7-0.1,1.1v3H5.6v-5.9h0.9l0.2,0.8h0.1c0.1-0.2,0.3-0.4,0.4-0.5c0.2-0.1,0.4-0.2,0.6-0.3c0.2-0.1,0.5-0.1,0.7-0.1c0.4,0,0.8,0.1,1.1,0.2c0.3,0.2,0.5,0.4,0.7,0.7h0.1c0.2-0.3,0.5-0.6,0.8-0.7C11.4,26.4,11.7,26.3,12.1,26.3z"></path><path fill="" d="M18.4,26.3c0.5,0,1,0.1,1.3,0.3c0.4,0.2,0.7,0.5,0.8,0.9c0.2,0.4,0.3,0.9,0.3,1.4v0.6h-4c0,0.6,0.2,1.1,0.5,1.5c0.3,0.3,0.8,0.5,1.3,0.5c0.4,0,0.7,0,1-0.1c0.3-0.1,0.6-0.2,0.9-0.3v0.9c-0.3,0.1-0.6,0.2-0.9,0.3c-0.3,0.1-0.7,0.1-1.1,0.1c-0.6,0-1.1-0.1-1.5-0.3c-0.4-0.2-0.8-0.6-1-1c-0.2-0.4-0.4-1-0.4-1.7c0-0.7,0.1-1.2,0.3-1.7c0.2-0.5,0.5-0.8,0.9-1.1S17.8,26.3,18.4,26.3z M18.3,27.2c-0.4,0-0.8,0.1-1.1,0.4c-0.3,0.3-0.4,0.7-0.5,1.2h2.9c0-0.3-0.1-0.6-0.2-0.9c-0.1-0.2-0.3-0.4-0.5-0.6C18.9,27.2,18.7,27.2,18.3,27.2z"></path><path fill="" d="M25.4,26.3c0.7,0,1.2,0.2,1.6,0.5c0.4,0.3,0.5,0.9,0.5,1.7v3.9h-1.1v-3.7c0-0.5-0.1-0.8-0.3-1.1c-0.2-0.2-0.5-0.4-1-0.4c-0.6,0-1,0.2-1.3,0.5c-0.2,0.4-0.4,0.9-0.4,1.6v3h-1.1v-5.9h0.9l0.2,0.8h0.1c0.1-0.2,0.3-0.4,0.5-0.5s0.4-0.2,0.6-0.3S25.1,26.3,25.4,26.3z"></path><path fill="" d="M34.4,26.4v5.9h-0.9l-0.2-0.8h-0.1c-0.1,0.2-0.3,0.4-0.5,0.5c-0.2,0.1-0.4,0.2-0.7,0.3c-0.2,0.1-0.5,0.1-0.8,0.1c-0.5,0-0.8-0.1-1.2-0.2c-0.3-0.2-0.6-0.4-0.7-0.7s-0.2-0.7-0.2-1.2v-3.9h1.1v3.7c0,0.5,0.1,0.8,0.3,1.1s0.5,0.4,0.9,0.4c0.4,0,0.7-0.1,1-0.2c0.2-0.2,0.4-0.4,0.5-0.7c0.1-0.3,0.2-0.7,0.2-1.2v-3H34.4z"></path></g></svg>
+          </button>
+        </div> 
+      </div> 
+    </div>
+     <!-- rwd多出來的menu -->
+    <div id="headerMenu768" class="absolute top-0 right-0 flex items-center" style="display: none;">
+      <button class="sizeOpacityHoverEffect" aria-label="menu">
+        <svg class="h-20 w-20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve"><rect class="g-expo-nav-hamburger__svg__line1" x="5.6" y="7.5" fill="" width="28" height="0.9"></rect><rect class="g-expo-nav-hamburger__svg__line2" x="5.6" y="13" fill="" width="28" height="0.9"></rect><rect class="g-expo-nav-hamburger__svg__line3" x="5.6" y="18.5" fill="" width="28" height="0.9"></rect><g class="g-expo-nav-hamburger__svg__menu"><path fill="" d="M12.1,26.3c0.7,0,1.2,0.2,1.5,0.5s0.5,0.9,0.5,1.6v3.9H13v-3.7c0-0.5-0.1-0.8-0.3-1c-0.2-0.2-0.5-0.3-0.9-0.3c-0.5,0-0.9,0.2-1.2,0.5c-0.2,0.3-0.4,0.8-0.4,1.4v3.2H9.3v-3.7c0-0.3,0-0.6-0.1-0.8S9,27.5,8.8,27.4c-0.2-0.1-0.4-0.2-0.6-0.2c-0.4,0-0.7,0.1-0.9,0.2c-0.2,0.2-0.4,0.4-0.5,0.7c-0.1,0.3-0.1,0.7-0.1,1.1v3H5.6v-5.9h0.9l0.2,0.8h0.1c0.1-0.2,0.3-0.4,0.4-0.5c0.2-0.1,0.4-0.2,0.6-0.3c0.2-0.1,0.5-0.1,0.7-0.1c0.4,0,0.8,0.1,1.1,0.2c0.3,0.2,0.5,0.4,0.7,0.7h0.1c0.2-0.3,0.5-0.6,0.8-0.7C11.4,26.4,11.7,26.3,12.1,26.3z"></path><path fill="" d="M18.4,26.3c0.5,0,1,0.1,1.3,0.3c0.4,0.2,0.7,0.5,0.8,0.9c0.2,0.4,0.3,0.9,0.3,1.4v0.6h-4c0,0.6,0.2,1.1,0.5,1.5c0.3,0.3,0.8,0.5,1.3,0.5c0.4,0,0.7,0,1-0.1c0.3-0.1,0.6-0.2,0.9-0.3v0.9c-0.3,0.1-0.6,0.2-0.9,0.3c-0.3,0.1-0.7,0.1-1.1,0.1c-0.6,0-1.1-0.1-1.5-0.3c-0.4-0.2-0.8-0.6-1-1c-0.2-0.4-0.4-1-0.4-1.7c0-0.7,0.1-1.2,0.3-1.7c0.2-0.5,0.5-0.8,0.9-1.1S17.8,26.3,18.4,26.3z M18.3,27.2c-0.4,0-0.8,0.1-1.1,0.4c-0.3,0.3-0.4,0.7-0.5,1.2h2.9c0-0.3-0.1-0.6-0.2-0.9c-0.1-0.2-0.3-0.4-0.5-0.6C18.9,27.2,18.7,27.2,18.3,27.2z"></path><path fill="" d="M25.4,26.3c0.7,0,1.2,0.2,1.6,0.5c0.4,0.3,0.5,0.9,0.5,1.7v3.9h-1.1v-3.7c0-0.5-0.1-0.8-0.3-1.1c-0.2-0.2-0.5-0.4-1-0.4c-0.6,0-1,0.2-1.3,0.5c-0.2,0.4-0.4,0.9-0.4,1.6v3h-1.1v-5.9h0.9l0.2,0.8h0.1c0.1-0.2,0.3-0.4,0.5-0.5s0.4-0.2,0.6-0.3S25.1,26.3,25.4,26.3z"></path><path fill="" d="M34.4,26.4v5.9h-0.9l-0.2-0.8h-0.1c-0.1,0.2-0.3,0.4-0.5,0.5c-0.2,0.1-0.4,0.2-0.7,0.3c-0.2,0.1-0.5,0.1-0.8,0.1c-0.5,0-0.8-0.1-1.2-0.2c-0.3-0.2-0.6-0.4-0.7-0.7s-0.2-0.7-0.2-1.2v-3.9h1.1v3.7c0,0.5,0.1,0.8,0.3,1.1s0.5,0.4,0.9,0.4c0.4,0,0.7-0.1,1-0.2c0.2-0.2,0.4-0.4,0.5-0.7c0.1-0.3,0.2-0.7,0.2-1.2v-3H34.4z"></path></g></svg>
+      </button>
+    </div> 
+  </header>
+
+  <!-- 主版 -->
+<div id="home" class="relative h-screen pt-14 overflow-hidden">
+  <!-- 背景圖片 -->
+  <div id="homeBanner" class="absolute top-0 left-0 w-full h-screen overflow-hidden">
+    <img class="w-full h-auto min-h-full object-cover absolute bottom-0"src="../src/pic/one-yeartogo-1-en-pc.webp" alt="banner">
+  </div>
+  <!-- Expo 2025-->
+  <div id="homwBannerExpo2025" class="zoomInBanner absolute top-28 left-24 w-64 h-64 z-3">
+    <img src="../src/pic/tit-expo2025-1-pc.svg" alt="expo2025" class="mb-4">
+    <img src="../src/pic/tit-expo2025-2-pc.svg" alt="Description of image">
+  </div>
+  <!-- 左下角的expositeinformation-->
+  <div id="homeExpositeInformation" class="zoomInBanner absolute left-24 bottom-4 flex flex-col justify-center items-center gap-1">
+    <div class="bannerTransformArrowHoverEffect customBoxShadow relative bg-opacity-70 w-60 h-16 rounded-l-full rounded-br-full overflow-hidden">
+      <img class="w-full h-full object-cover"src="../src/pic/img-map-bg.webp" alt="banner">
+      <div id="homeExpositeInformationText" class="absolute left-6 bottom-2 flex flex-col justify-start text-white text-xl font-bold">
+        <p class="" style="line-height: 1.2;">Expo Site</p>
+        <p class="" style="line-height: 1.2;">INFORMATION</p>
+      </div>
+      <div id="homeExpositeInformationArrow" class="bannerTransformArrowHoverEffectArrow absolute right-2 top-2 rounded-full w-8 h-8 bg-white">
+        <svg width="30px" height="30px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="#1E90FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+      </div>
+    </div>
+    <div id="homeExpositeInformationLocation" class="text-sm text-white">
+      <a>Location: ©átoa (Kobe-City, Hyogo)</a>
+    </div>
+  </div>
+
+  <!-- 左下角的scroll-->
+  <div id="homeScroll" class="absolute left-6 bottom-24 z-3 w-10 h-10 rotate-90">
+    <div class="flex flex-row justify-center items-end h-full w-full">
+      <div class="text-white">
+        <p>scroll</p>
+      </div>
+      <div>
+        <svg width="100" height="10" xmlns="http://www.w3.org/2000/svg" id="scrollLine">
+          <line x1="10" y1="0" x2="100" y2="0" stroke="white" stroke-width="1"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- 右下的圖卡輪流撥放-->
+  <div id="homebannerCards" class="zoomInBanner absolute right-60 bottom-10 z-3 w-80 h-60">
+
+    <div class="bannerCards relative h-full w-full ">
+      <div id="bannerCard1" class="bannerTransformShadowHoverEffect bannerCard absolute w-72 h-52 customBoxShadow">
+        <img class="w-full h-full object-cover"src="../src/pic/banpaku-en.webp" alt="bannerCard1">
+      </div>
+      <div id="bannerCard2" class="bannerTransformShadowHoverEffect bannerCard absolute w-72 h-52 customBoxShadow">
+        <img class="w-full h-full object-cover"src="../src/pic/online-store-en.webp" alt="bannerCard2">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 紅色的tickets information-->
+  <div id="homebannerTicketInformation" class="zoomInBanner absolute top-36 right-24 z-30 w-60 h-36 grid grid-cols-4 gap-3">
+    
+    <div id="homebannerTicketInformationCard" class="col-span-3 col-start-1">
+      <div class="w-full h-full rounded-l-3xl rounded-br-3xl customBoxShadow flex flex-col justify-center items-center py-4 " style="background-color: #f1120e; opacity: 0.7;">
+        <img id="homebannerTicketInformationImg" class="w-16 h-16"src="../src/pic/ico.svg" alt="bannerCard1">
+        <div id="homebannerTicketInformationText" class="flex flex-col justify-center items-center text-white text-sm font-semibold py-1">
+          <a>Tickets</a>
+          <a>Information</a>
+        </div>
+      </div>
+    </div> 
+
+    <div id="homebannerTicketInformationArrow" class="col-span-1 col-start-4 grid grid-rows-3">
+      <div id="bannerTicketInformationArrow" class="row-start-3">
+        <img id="" src="../src/pic/arrow.svg" alt="Description of image">
+      </div>
+    </div>
+  </div>
+
+  <!-- 白色的倒數計時-->
+  <div id="homeBannerTimeCal" class="zoomInBanner absolute top-24 right-20 z-10 w-52 h-16 bg-white bg-opacity-70 rounded-r-full rounded-bl-full flex flex-row justify-center items-center" style="color:#4169E1;">
+    <h1 class="homeBannerTimeCalText text-2xl font-semibold mr-1">
+      282
+    </h1>
+    <p class="bannerTimeCalText text-sm font-normal">
+      days to go 
+    </p>
+    <p class="bannerTimeCalText text-md font-normal">
+      (JST)
+    </p>
+  </div>
+
+</div>
+
+
+<!-- 主版白色新聞欄 -->
+<div id="newsContainer" class="relative h-52 w-full overflow-hidden">
+  <!-- 左 -->
+  <div id="newsContainerLeft" class="absolute left-28 h-full w-44 py-6 flex justify-center flex-col container mx-auto gap-4">
+    <div class="flex justify-start items-center py-3">
+      <a class="text-4xl font-bold tracking-wide">NEWS</a>
+    </div>
+    
+    <div id="newsContainerLeftButton" class="">
+      <div class="sizeOpacityHoverEffect flex justify-between items-center bg-black h-8 w-full rounded-full px-3 mb-1">
+        <a class="text-white text-xxs font-semibold" href="https://www.expo2025.or.jp/en/inquiry/">Press Release list</a>
+        <div class="">
+          <svg fill="white" height="10px" width="10px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path> </g></svg>
+        </div>
+      </div>
+      <div class="sizeOpacityHoverEffect flex justify-between items-center bg-black h-8 w-full rounded-full px-3">
+        <a class="text-white text-xxs font-semibold" href="https://www.expo2025.or.jp/en/inquiry/">New list</a>
+        <div class="">
+          <svg fill="white" height="10px" width="10px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path> </g></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 右-->
+  <div id="newsContainerRight" class="absolute left-72 h-full w-full">
+    <div class="h-full flex justify-start overflow-hidden">
+
+      <div class="news-cards h-full w-full flex gap-2 pl-4">
+
+        <div class="bannerTransformOpacityHoverEffect news-card w-72 h-full relative flex justify-center items-center">
+          
+          <div class="news-cardPicture absolute top-1 rounded-3xl w-64 h-52 z-0 overflow-hidden">
+            <img class="w-full h-full object-cover" src="../src/pic/bg-news-item.webp" alt="bg-card">
+          </div>
+          <div class="news-cardContain absolute top-0 bg-white bg-opacity-80 relative flex justify-center z-1 w-56 h-40 rounded-2xl">
+            <div class="absolute flex flex-col justify-start px-6 py-5 gap-1">
+              <div class="news-cardContainText relative h-5 text-blue-700 text-sm font-medium">
+                <p class="absolute bottom-0 left-0">2024.07.02</p>
+              </div>
+              <div class="news-cardContainText relative h-5 text-blue-700 text-xs font-normal mb-1">
+                <p class="absolute bottom-0 left-0">Press Release</p>
+              </div>
+              <div class="news-cardContainText h-20 text-sm font-normal">
+                <p class="">“TEAM EXPO 2025” Programme Co-Creation Partners Registered...</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="bannerTransformOpacityHoverEffect news-card w-72 h-full relative flex justify-center items-center">
+          
+          <div class="news-cardPicture absolute top-1 rounded-3xl w-64 h-52 z-0 overflow-hidden">
+            <img class="w-full h-full object-cover" src="../src/pic/bg-news-item.webp" alt="bg-card">
+          </div>
+          <div class="news-cardContain absolute top-0 bg-white bg-opacity-80 relative flex justify-center z-1 w-56 h-40 rounded-2xl">
+            <div class="absolute flex flex-col justify-start px-6 py-5 gap-1">
+              <div class="news-cardContainText relative h-5 text-blue-700 text-sm font-medium">
+                <p class="absolute bottom-0 left-0">2024.07.02</p>
+              </div>
+              <div class="news-cardContainText relative h-5 text-blue-700 text-xs font-normal mb-1">
+                <p class="absolute bottom-0 left-0">Press Release</p>
+              </div>
+              <div class="news-cardContainText h-20 text-sm font-normal">
+                <p class="">“TEAM EXPO 2025” Programme Co-Creation Partners Registered...</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="bannerTransformOpacityHoverEffect news-card w-72 h-full relative flex justify-center items-center">
+          
+          <div class="news-cardPicture absolute top-1 rounded-3xl w-64 h-52 z-0 overflow-hidden">
+            <img class="w-full h-full object-cover" src="../src/pic/bg-news-item.webp" alt="bg-card">
+          </div>
+          <div class="news-cardContain absolute top-0 bg-white bg-opacity-80 relative flex justify-center z-1 w-56 h-40 rounded-2xl">
+            <div class="absolute flex flex-col justify-start px-6 py-5 gap-1">
+              <div class="news-cardContainText relative h-5 text-blue-700 text-sm font-medium">
+                <p class="absolute bottom-0 left-0">2024.07.02</p>
+              </div>
+              <div class="news-cardContainText relative h-5 text-blue-700 text-xs font-normal mb-1">
+                <p class="absolute bottom-0 left-0">Press Release</p>
+              </div>
+              <div class="news-cardContainText h-20 text-sm font-normal">
+                <p class="">“TEAM EXPO 2025” Programme Co-Creation Partners Registered...</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="bannerTransformOpacityHoverEffect news-card w-72 h-full relative flex justify-center items-center">
+          
+          <div class="news-cardPicture absolute top-1 rounded-3xl w-64 h-52 z-0 overflow-hidden">
+            <img class="w-full h-full object-cover" src="../src/pic/bg-news-item.webp" alt="bg-card">
+          </div>
+          <div class="news-cardContain absolute top-0 bg-white bg-opacity-80 relative flex justify-center z-1 w-56 h-40 rounded-2xl">
+            <div class="absolute flex flex-col justify-start px-6 py-5 gap-1">
+              <div class="news-cardContainText relative h-5 text-blue-700 text-sm font-medium">
+                <p class="absolute bottom-0 left-0">2024.07.02</p>
+              </div>
+              <div class="news-cardContainText relative h-5 text-blue-700 text-xs font-normal mb-1">
+                <p class="absolute bottom-0 left-0">Press Release</p>
+              </div>
+              <div class="news-cardContainText h-20 text-sm font-normal">
+                <p class="">“TEAM EXPO 2025” Programme Co-Creation Partners Registered...</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="bannerTransformOpacityHoverEffect news-card w-72 h-full relative flex justify-center items-center">
+          
+          <div class="news-cardPicture absolute top-1 rounded-3xl w-64 h-52 z-0 overflow-hidden">
+            <img class="w-full h-full object-cover" src="../src/pic/bg-news-item.webp" alt="bg-card">
+          </div>
+          <div class="news-cardContain absolute top-0 bg-white bg-opacity-80 relative flex justify-center z-1 w-56 h-40 rounded-2xl">
+            <div class="absolute flex flex-col justify-start px-6 py-5 gap-1">
+              <div class="news-cardContainText relative h-5 text-blue-700 text-sm font-medium">
+                <p class="absolute bottom-0 left-0">2024.07.02</p>
+              </div>
+              <div class="news-cardContainText relative h-5 text-blue-700 text-xs font-normal mb-1">
+                <p class="absolute bottom-0 left-0">Press Release</p>
+              </div>
+              <div class="news-cardContainText h-20 text-sm font-normal">
+                <p class="">“TEAM EXPO 2025” Programme Co-Creation Partners Registered...</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="bannerTransformOpacityHoverEffect news-card w-72 h-full relative flex justify-center items-center">
+          
+          <div class="news-cardPicture absolute top-1 rounded-3xl w-64 h-52 z-0 overflow-hidden">
+            <img class="w-full h-full object-cover" src="../src/pic/bg-news-item.webp" alt="bg-card">
+          </div>
+          <div class="news-cardContain absolute top-0 bg-white bg-opacity-80 relative flex justify-center z-1 w-56 h-40 rounded-2xl">
+            <div class="absolute flex flex-col justify-start px-6 py-5 gap-1">
+              <div class="news-cardContainText relative h-5 text-blue-700 text-sm font-medium">
+                <p class="absolute bottom-0 left-0">2024.07.02</p>
+              </div>
+              <div class="news-cardContainText relative h-5 text-blue-700 text-xs font-normal mb-1">
+                <p class="absolute bottom-0 left-0">Press Release</p>
+              </div>
+              <div class="news-cardContainText h-20 text-sm font-normal">
+                <p class="">“TEAM EXPO 2025” Programme Co-Creation Partners Registered...</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="bannerTransformOpacityHoverEffect news-card w-72 h-full relative flex justify-center items-center">
+          
+          <div class="news-cardPicture absolute top-1 rounded-3xl w-64 h-52 z-0 overflow-hidden">
+            <img class="w-full h-full object-cover" src="../src/pic/bg-news-item.webp" alt="bg-card">
+          </div>
+          <div class="news-cardContain absolute top-0 bg-white bg-opacity-80 relative flex justify-center z-1 w-56 h-40 rounded-2xl">
+            <div class="absolute flex flex-col justify-start px-6 py-5 gap-1">
+              <div class="news-cardContainText relative h-5 text-blue-700 text-sm font-medium">
+                <p class="absolute bottom-0 left-0">2024.07.02</p>
+              </div>
+              <div class="news-cardContainText relative h-5 text-blue-700 text-xs font-normal mb-1">
+                <p class="absolute bottom-0 left-0">Press Release</p>
+              </div>
+              <div class="news-cardContainText h-20 text-sm font-normal">
+                <p class="">“TEAM EXPO 2025” Programme Co-Creation Partners Registered...</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="bannerTransformOpacityHoverEffect news-card w-72 h-full relative flex justify-center items-center">
+          
+          <div class="news-cardPicture absolute top-1 rounded-3xl w-64 h-52 z-0 overflow-hidden">
+            <img class="w-full h-full object-cover" src="../src/pic/bg-news-item.webp" alt="bg-card">
+          </div>
+          <div class="news-cardContain absolute top-0 bg-white bg-opacity-80 relative flex justify-center z-1 w-56 h-40 rounded-2xl">
+            <div class="absolute flex flex-col justify-start px-6 py-5 gap-1">
+              <div class="news-cardContainText relative h-5 text-blue-700 text-sm font-medium">
+                <p class="absolute bottom-0 left-0">2024.07.02</p>
+              </div>
+              <div class="news-cardContainText relative h-5 text-blue-700 text-xs font-normal mb-1">
+                <p class="absolute bottom-0 left-0">Press Release</p>
+              </div>
+              <div class="news-cardContainText h-20 text-sm font-normal">
+                <p class="">“TEAM EXPO 2025” Programme Co-Creation Partners Registered...</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <button id="newsContainerLeftBtn" class="left-btn absolute left-72 w-16 h-16 z-2 hidden" style="top: 4.5rem;">
+    <div class="rounded-full w-full h-full bg-black bg-opacity-60 flex justify-center items-center">
+      <svg fill="white" height="32px" width="32px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve" transform="rotate(90)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path> </g></svg>
+    </div>
+  </button>
+
+  <button id="newsContainerRightBtn" class="right-btn absolute right-8 z-2" style="width: 64px; height: 64px; top: 4.5rem;">
+    <div class="rounded-full w-full h-full bg-black bg-opacity-60 flex justify-center items-center">
+      <svg fill="white" height="32px" width="32px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path> </g></svg>
+    </div>
+  </button>
+
+  <!-- rwd的下方兩個按鈕-->
+  <div id="newsBottomButton" class="hidden">
+    <div class="sizeOpacityHoverEffect flex justify-between items-center bg-black h-20 w-64 rounded-full px-6">
+      <a class="text-white text-xl font-semibold" href="https://www.expo2025.or.jp/en/inquiry/">Press Release list</a>
+      <div class="">
+        <svg fill="white" height="25px" width="25px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path> </g></svg>
+      </div>
+    </div>
+    <div class="sizeOpacityHoverEffect flex justify-between items-center bg-black h-20 w-48 rounded-full px-6">
+      <a class="text-white text-xl font-semibold" href="https://www.expo2025.or.jp/en/inquiry/">New list</a>
+      <div class="">
+        <svg fill="white" height="25px" width="25px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path> </g></svg>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Enjoy Pavilions-->
+<div id="enjoyPavilions" class="relative w-full overflow-hidden" style="height: 1500px">
+  
+  <div class="absolute top-0 right-0 w-full h-full overflow-hidden">
+    <img class="w-full h-auto min-h-full object-cover absolute bottom-0"src="../src/pic/bg-pc.webp" alt="banner">
+  </div>
+
+  <div id="enjoyPavilionsBlurBanner" class="absolute left-16 w-full overflow-hidden my-14 rounded-2xl" style="height: 1388px">
+    <div class="bg-white bg-opacity-30 w-full h-full" style="backdrop-filter: blur(10px);"></div>
+  </div>
+
+  <div class="absolute top-0 left-0 w-60 h-60">
+    <img src="../src/pic/accent-1-pc.svg" alt="banner" />
+  </div>
+  <div class="absolute top-0 left-0 w-60 h-60">
+    <img src="../src/pic/accent-2-pc.svg" alt="banner" />
+  </div>
+
+    <!-- Enjoy Pavilions 上面-->
+  <div id="enjoyPavilionsTopContainer" class="absolute top-20 left-24 w-full flex flex-row gap-3" style="height: 360px;">
+    <div id="enjoyPavilionsTopContainerLeft" class="flex flex-col justify-between">
+      
+      <div class="flex flex-col w-full gap-4">
+        <div class="">
+          <h1 class="text-8xl font-bold text-white">ENJOY</h1>
+        </div>
+        <div class="mx-1">
+          <p class="mb-2 text-2xl tracking-widest font-semibold text-white">Pavilions</p>
+          <svg id="enjoyPavilionsTopContainerLeftSVG" width="440" height="1" viewBox="0 0 1000 1" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="1" x2="1000" y2="1" stroke="white" stroke-width="5"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <div class="cardsTitle flex items-center gap-4">
+          <svg class="cardsTitleSVG" width="3" height="16" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100%" height="100%" fill="red"/>
+          </svg>
+          <a class="cardsTitleText text-white text-2xl tracking-wide font-semibold">Pavilions</a>
+        </div>
+
+        <div id="enjoyPavilionsTopLeftCards" class="grid grid-cols-2 gap-3">
+
+          <div class="zoomInBanner w-full h-full relative">
+            <div class="enjoyPavilionsTopLeftCard bannerTransformOpacityArrowHoverEffect absolute top-0 bg-white relative z-10 rounded-3xl overflow-hidden" style="width: 216px; height: 120px">
+              <img class="enjoyPavilionsTopLeftCardPic object-cover"src="../src/pic/img-abroad-pc.webp" alt="banner">
+              <div class="bannerTransformArrowOpacityHoverEffectArrow absolute right-0 top-0">
+                <svg class="enjoyPavilionsTopLeftCardSVG" width="60px" height="60px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="zoomInBanner w-full h-full relative">
+            <div class="enjoyPavilionsTopLeftCard bannerTransformOpacityArrowHoverEffect absolute top-0 bg-white relative z-10 rounded-3xl overflow-hidden" style="width: 216px; height: 120px">
+              <img class="enjoyPavilionsTopLeftCardPic absolute w-full h-full object-cover z-30"src="../src/pic/img-s-pc.webp" alt="banner">
+              <div class="bannerTransformArrowOpacityHoverEffectArrow absolute right-0 top-0 z-30">
+                <svg class="enjoyPavilionsTopLeftCardSVG" width="60px" height="60px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+              </div>
+              <div id="enjoyPavilionsTopLeftCardScrollImg" class="pavilions-picture-animation absolute z-0 overflow-hidden" style="display: flex; width: calc(216px * 17); height: 120px;">
+                <img class="w-full h-full object-cover"src="../src/pic/pv1.webp" alt="banner" style="width: 216px; height: 120px">
+                <img class="w-full h-full object-cover"src="../src/pic/pv2.webp" alt="banner" style="width: 216px; height: 120px">
+                <img class="w-full h-full object-cover"src="../src/pic/pv3.webp" alt="banner" style="width: 216px; height: 120px">
+                <img class="w-full h-full object-cover"src="../src/pic/pv4.webp" alt="banner" style="width: 216px; height: 120px">
+                <img class="w-full h-full object-cover"src="../src/pic/pv5.webp" alt="banner" style="width: 216px; height: 120px">
+                <img class="w-full h-full object-cover"src="../src/pic/pv6.webp" alt="banner" style="width: 216px; height: 120px">
+                <img class="w-full h-full object-cover"src="../src/pic/pv7.webp" alt="banner" style="width: 216px; height: 120px">
+                <img class="w-full h-full object-cover"src="../src/pic/pv8.webp" alt="banner" style="width: 216px; height: 120px">
+                <img class="w-full h-full object-cover"src="../src/pic/pv9.webp" alt="banner" style="width: 216px; height: 120px">
+                <img class="w-full h-full object-cover"src="../src/pic/pv10.webp" alt="banner" style="width: 216px; height: 120px">
+                <img class="w-full h-full object-cover"src="../src/pic/pv11.webp" alt="banner" style="width: 216px; height: 120px">
+                <img class="w-full h-full object-cover"src="../src/pic/pv12.webp" alt="banner" style="width: 216px; height: 120px">
+                <img class="w-full h-full object-cover"src="../src/pic/pv13.webp" alt="banner" style="width: 216px; height: 120px">
+                <img class="w-full h-full object-cover"src="../src/pic/pv14.webp" alt="banner" style="width: 216px; height: 120px">
+                <img class="w-full h-full object-cover"src="../src/pic/pv15.webp" alt="banner" style="width: 216px; height: 120px">
+                <img class="w-full h-full object-cover"src="../src/pic/pv16.webp" alt="banner" style="width: 216px; height: 120px">
+                <img class="w-full h-full object-cover"src="../src/pic/pv17.webp" alt="banner" style="width: 216px; height: 120px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="zoomInBanner">
+      <div id="enjoyPavilionsTopContainerRight" class="bannerTransformOpacityArrowHoverEffect relative bg-white rounded-2xl overflow-hidden" style="width: 620px; height: 360px">
+        <div class="slideshow-container w-full h-full">
+          <img class="fade show object-cover" src="../src/pic/img-signature-hukuoka-pc.webp" alt="banner" style="width: 620px; height: 360px">
+          <img class="fade object-cover" src="../src/pic/img-signature-ishiguro-pc.webp" alt="banner" style="width: 620px; height: 360px">
+          <img class="fade object-cover" src="../src/pic/img-signature-kawamori-pc.webp" alt="banner" style="width: 620px; height: 360px">
+          <img class="fade object-cover" src="../src/pic/img-signature-kawase-pc.webp" alt="banner" style="width: 620px; height: 360px">
+          <img class="fade object-cover" src="../src/pic/img-signature-koyama-pc.webp" alt="banner" style="width: 620px; height: 360px">
+          <img class="fade object-cover" src="../src/pic/img-signature-miyata-pc.webp" alt="banner" style="width: 620px; height: 360px">
+          <img class="fade object-cover" src="../src/pic/img-signature-nakajima-pc.webp" alt="banner" style="width: 620px; height: 360px">
+          <img class="fade object-cover" src="../src/pic/img-signature-ochiai-pc.webp" alt="banner" style="width: 620px; height: 360px">
+        </div>
+        <div class="bannerTransformArrowHoverEffectArrow absolute right-0 top-0">
+          <svg width="100px" height="100px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>      
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Enjoy Pavilions 第二行-->
+  <div id="enjoyPavilionsMiddle1Container" class="absolute left-24 w-full relative overflow-hidden" style="height: 340px; top: 33%; ">
+
+    <div class="cardsTitle absolute left-0 top-0 flex items-center gap-4">
+      <svg class="cardsTitleSVG" width="3" height="16" xmlns="http://www.w3.org/2000/svg">
+        <rect width="3" height="16" fill="red"/>
+      </svg>
+      <a class="cardsTitleText text-white text-2xl tracking-wide font-semibold">Future Society Showcase</a>
+    </div>
+
+    <div class="absolute left-0 top-6 h-full w-full mt-2">
+      <div class="flex justify-start overflow-hidden">
+
+        <div class="enjoy-pavilions-cards flex" style="width: calc(220px * 10); height: 220px;" >
+
+          <div class="zoomInBanner enjoy-pavilions-card flex items-center justify-start" style="width: 510px; height: 220px">
+            <div class="bannerTransformOpacityArrowHoverEffect relative rounded-2xl overflow-hidden" style="width: 500px; height: 200px">
+              <img class="w-full h-full object-cover"src="../src/pic/img-about-en-pc.webp" alt="banner">
+              <div class="bannerTransformArrowOpacityHoverEffectArrow absolute right-0 top-0">
+                <svg width="60px" height="60px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="zoomInBanner enjoy-pavilions-card flex items-center justify-center" style="width: 220px; height: 220px">
+            <img class="bannerTransformOpacityHoverEffect object-cover"src="../src/pic/img-virtual-en-pc.webp" alt="banner" style="width: 200px; height: 200px">
+          </div>
+          <div class="zoomInBanner enjoy-pavilions-card  flex items-center justify-center" style="width: 220px; height: 220px">
+            <img class="bannerTransformOpacityHoverEffect object-cover"src="../src/pic/img-evbus-en-pc.webp" alt="banner" style="width: 200px; height: 200px">
+          </div>
+          <div class="zoomInBanner enjoy-pavilions-card flex items-center justify-center" style="width: 220px; height: 220px">
+            <img class="bannerTransformOpacityHoverEffect object-cover"src="../src/pic/img-city-en-pc.webp" alt="banner" style="width: 200px; height: 200px">
+          </div>
+          <div class="zoomInBanner enjoy-pavilions-card flex items-center justify-center" style="width: 220px; height: 220px">
+            <img class="bannerTransformOpacityHoverEffect object-cover"src="../src/pic/img-flyingcar-en-pc.webp" alt="banner" style="width: 200px; height: 200px">
+          </div>
+          <div class="zoomInBanner enjoy-pavilions-card flex items-center justify-center" style="width: 220px; height: 220px">
+            <img class="bannerTransformOpacityHoverEffect object-cover"src="../src/pic/img-digitalexpo-en-pc.webp" alt="banner" style="width: 200px; height: 200px">
+          </div>
+          <div class="zoomInBanner enjoy-pavilions-card flex items-center justify-center" style="width: 220px; height: 220px">
+            <img class="bannerTransformOpacityHoverEffect object-cover"src="../src/pic/img-art-en-pc.webp" alt="banner" style="width: 200px; height: 200px">
+          </div>
+          <div class="zoomInBanner enjoy-pavilions-card flex items-center justify-center" style="width: 220px; height: 220px">
+            <img class="bannerTransformOpacityHoverEffect object-cover"src="../src/pic/img-digitalexpo-trancelation-en-pc.webp" alt="banner" style="width: 200px; height: 200px">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="enjoy-pavilions-left-btn absolute left-8 top-24 w-16 h-16 z-20 hidden">
+      <div class="rounded-full w-full h-full bg-black bg-opacity-60 flex justify-center items-center">
+        <svg fill="white" height="32px" width="32px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve" transform="rotate(90)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path> </g></svg>
+      </div>
+    </button>
+
+    <button class="enjoy-pavilions-right-btn absolute right-32 top-24 w-16 h-16 z-20">
+      <div class="rounded-full w-full h-full bg-black bg-opacity-60 flex justify-center items-center">
+        <svg fill="white" height="32px" width="32px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path> </g></svg>
+      </div>
+    </button>
+  </div>
+
+  <div id="enjoyPavilionsMiddle2Container" class="absolute left-24 flex" style="height: 400px; top: 54%; ">
+    <div class="flex flex-col gap-3">
+      <div class="flex items-center gap-4">
+        <svg width="3" height="16" xmlns="http://www.w3.org/2000/svg">
+          <rect width="3" height="16" fill="red"/>
+        </svg>
+        <a class="cardsTitleText text-white text-2xl tracking-wide font-semibold">SDGs+beyond</a>
+      </div>
+
+      <div class="flex flex-row gap-1" style="height: 300px">
+
+        <div class="zoomInBanner flex flex-col gap-2 justify-center items-center" style="width: 270px; height: 260px;">
+
+          <div class="bannerTransformArrowHoverEffect bg-white relative z-1 rounded-2xl" style="width: 260px; height: 170px; background: linear-gradient(to bottom right, 	#43CD80, #00EEEE);">
+            <div class="absolute top-4 left-4 h-full w-full flex flex-col justify-start items-start gap-1">
+              <div class="text-white text-2xl font-bold tracking-wide leading-none">
+                <p class="">Theme</p>
+                <p class="">Weeks</p>
+              </div>
+            </div>
+            <div class="absolute bottom-4 left-4 flex justify-center items-center bg-white h-6 w-40 rounded-full">
+              <p class="text-white text-xs font-semibold" style="color: transparent; background: linear-gradient(to bottom right, #43CD80, #00EEEE); -webkit-background-clip: text; background-clip: text;">Co-design-challenge</p>
+            </div>
+            <div class="bannerTransformArrowHoverEffectArrow absolute right-0 top-0">
+              <svg width="60px" height="60px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+            </div>
+          </div>
+          
+          <div style="width: 240px; height: 80px">
+            <p class="text-white text-sm leading-normal">Aiming for Solutions to Global Issues</p>
+          </div>
+
+        </div>
+
+        <div class="zoomInBanner flex flex-col gap-2 justify-center items-center mt-6" style="width: 270px; height: 260px">
+          <div class="bannerTransformArrowHoverEffect bg-white relative z-1 rounded-2xl" style="width: 260px; height: 170px; background: linear-gradient(to bottom right,	#FF6A6A, #FFA500);">
+            <div class="absolute top-4 left-4 h-full w-full flex flex-col justify-start items-start gap-1">
+              <div class="text-white text-2xl font-bold tracking-wide leading-none">
+                <p class="">Sustaina-</p>
+                <p class="">bility</p>
+              </div>
+            </div>
+            <div class="absolute bottom-4 left-4 flex justify-center items-center bg-white h-6 w-40 rounded-full">
+              <p class="text-white text-xs font-semibold" style="color: transparent; background: linear-gradient(to bottom right,#FF6A6A, #FFA500); -webkit-background-clip: text; background-clip: text;">Co-design-challenge</p>
+            </div>
+            <div class="bannerTransformArrowHoverEffectArrow absolute right-0 top-0">
+              <svg width="60px" height="60px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+            </div>
+          </div>
+          <div class="" style="width: 240px; height: 80px">
+            <p class="text-white text-sm leading-normal">Initatives on Sustainability</p>
+          </div>
+        </div>
+        <div class="zoomInBanner flex flex-col gap-2 justify-center items-center" style="width: 270px; height: 260px">
+          <div class="bannerTransformArrowHoverEffect bg-white relative z-1 rounded-2xl" style="width: 260px; height: 170px ; background: linear-gradient(to bottom right,#00BFFF, 	#4682B4);" >
+            
+            <div class="absolute top-4 left-4 h-full w-full flex flex-col justify-start items-start gap-1">
+              <div class="text-white text-2xl font-bold tracking-wide leading-none">
+                <p class="">Cashless</p>
+                <p class=""></p>
+              </div>
+            </div>
+            <div class="absolute bottom-4 left-4 flex justify-center items-center bg-white h-6 w-40 rounded-full">
+              <p class="text-white text-xs font-semibold" style="color: transparent; background: linear-gradient(to bottom right,#00BFFF, 	#4682B4); -webkit-background-clip: text; background-clip: text;">Co-design-challenge</p>
+            </div>
+            <div class="bannerTransformArrowHoverEffectArrow absolute right-0 top-0">
+              <svg width="60px" height="60px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+            </div>
+          </div>
+          <div class="" style="width: 240px; height: 80px">
+            <p class="text-white text-sm leading-normal">EXPO2025 DIGITAL WALLET - MYAKU- PE! MYAKU-PO! MYAKU-N!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="enjoyPavilionsLastContainer" class="absolute left-24 flex flex-col gap-3" style="height: 640px; top: 76%;">
+    <div class="cardsTitle flex items-center gap-4">
+      <svg class="cardsTitleSVG" width="3" height="16" xmlns="http://www.w3.org/2000/svg">
+        <rect width="3" height="16" fill="red"/>
+      </svg>
+      <a class="cardsTitleText text-white text-2xl tracking-wide font-semibold">Music</a>
+    </div>
+    <div class="zoomInBanner flex flex-col gap-2">
+      <div class="bannerTransformArrowHoverEffect w-full h-full relative flex justify-center" style="width: 540px; height: 140px">
+        <div class="absolute top-0 bg-white relative z-1 rounded-2xl overflow-hidden" style="width: 540px; height: 140px">
+          <img class="w-full h-full object-cover"src="../src/pic/img-themesong-pc.webp" alt="banner">
+        </div>
+        <div class="bannerTransformArrowHoverEffectArrow absolute right-4 top-4 rounded-full w-10 h-10 bg-pink-400">
+          <svg width="40px" height="40px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+        </div>
+      </div>
+      <div class="" style="width: 540px; height: 80px">
+        <p class="text-white text-sm leading-normal">Let's sing and dance together!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+ <!-- visit the expo -->
+<div id="VisitTheExpoBanner" class="relative w-full overflow-hidden" style="height: 680px">
+  
+  <div class="absolute top-0 right-0 h-full overflow-hidden">
+    <img class="w-full h-full object-cover visitTheExpoBanner"src="../src/pic/bg-gradient.webp" alt="visit the expo banner">
+  </div>
+
+  <div class="absolute top-0 left-0 w-60 h-60">
+    <img src="../src/pic/accent-1-pc.svg" alt="banner" />
+  </div>
+  <div class="absolute top-0 left-0 w-60 h-60">
+    <img src="../src/pic/accent-2-pc.svg" alt="banner" />
+  </div>
+
+  <div id="VisitTheExpoTitle" class="absolute top-44 left-24 w-full">
+    <div class="relative h-full w-full">
+
+      <div  class="absolute bottom-0 left-0">
+        <h1 class="text-8xl font-bold">VISIT</h1>
+      </div>
+
+      <div id="VisitTheExpoSubtitle" class="absolute bottom-14 left-60 h-full">
+        <p class="text-2xl tracking-widest mb-2 font-semibold">visit the expo</p>
+        <svg width="1000" height="1" viewBox="0 0 1000 1" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="1" x2="1000" y2="1" stroke="black" stroke-width="2"/>
+        </svg>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Expo Site Map -->
+  <div id="VisitTheExpoSiteMap" class="absolute top-56 left-24 flex flex-row gap-16">
+    <div class="flex flex-col gap-3">
+      <div class="cardsTitle flex items-center gap-4">
+        <svg class="cardsTitleSVG" width="3" height="16" xmlns="http://www.w3.org/2000/svg">
+          <rect width="3" height="16" fill="red"/>
+        </svg>
+        <a class="cardsTitleText text-2xl tracking-wide font-medium">Expo Site Map</a>
+      </div>
+      <div id="VisitTheExpoSiteMapVideo" class="zoomInBanner rounded-2xl overflow-hidden relative" style="width: 480px; height: 280px">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover">
+          <source src="https://www.expo2025.or.jp/assets_top/movies/visit-place.mp4" type="video/mp4">
+        </video>
+        <div class="absolute h-full w-full top-28 left-8 flex flex-col justify-start items-start gap-2">
+          <div class="text-white text-6xl font-semibold tracking-wide leading-none">
+            <p class="">Expo Site</p>
+            <p class="">INFORMATION</p>
+          </div>
+          <div class="">
+            <p class="text-white text-xl font-semibold">会場情報</p>
+          </div>
+        </div>
+        <div class="absolute right-4 top-4 rounded-full w-10 h-10 bg-black">
+          <svg width="40px" height="40px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col">
+      <div class="flex flex-col gap-3 mb-5">
+        <div class="cardsTitle flex items-center gap-4">
+          <svg class="cardsTitleSVG" width="3" height="16" xmlns="http://www.w3.org/2000/svg">
+            <rect width="3" height="16" fill="red"/>
+          </svg>
+          <a class="cardsTitleText text-2xl tracking-wide font-semibold">Tickets Information</a>
+        </div>
+        <div class="zoomInBanner h-48 rounded-full overflow-hidden flex relative" style="width: 540px">
+            <img class="w-full h-full object-cover"src="../src/pic/img-info-bg.webp" alt="banner">
+            <img class=" absolute right-8 bottom-[-46px] w-52 h-52 object-cover"src="../src/pic/img-info-myaku.webp" alt="banner">
+            <div class="absolute h-full w-full top-10 left-10 flex flex-col justify-start items-start gap-2">
+              <div class="text-white text-4xl font-semibold tracking-wide leading-none">
+                <p class="">Tickets</p>
+                <p class="">Information</p>
+              </div>
+              <div class="">
+                <p class="text-white text-xl font-normal">チケットインフォメーション</p>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="flex flex-row justify-between h-full gap-4" style="width: 560px">
+        <div class="bannerTransformOpacityArrowHoverEffect w-full h-full relative flex justify-center items-center">
+          <div class="absolute top-4 rounded-3xl w-44 h-28 z-0 overflow-hidden">
+            <img class="w-full h-full object-cover" src="../src/pic/bg-card.webp" alt="bg-card">
+          </div>
+          <div class="absolute top-0 bg-white relative z-1 w-44 h-24 rounded-3xl">
+            <div class="absolute h-full w-full flex flex-col justify-start items-start px-5 py-5 gap-1">
+              <div class="">
+                <p class="text-black text-xl font-bold tracking-wide">Type & Price</p>
+              </div>
+              <div class="">
+                <p class="text-xs font-normal">券種および価格</p>
+              </div>
+            </div>
+            <div class="bannerTransformOpacityArrowHoverEffectArrow absolute right-2.5 bottom-2.5 rounded-full w-6 h-6 bg-blue-700 flex justify-center items-center">
+              <svg width="30px" height="30px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+            </div>
+          </div>
+        </div>
+        <div class="bannerTransformOpacityArrowHoverEffect w-full h-full relative flex justify-center items-center">
+          <div class="absolute top-4 rounded-3xl w-44 h-28 z-0 overflow-hidden">
+            <img class="w-full h-full object-cover" src="../src/pic/bg-card.webp" alt="bg-card">
+          </div>
+          <div class="absolute top-0 bg-white relative z-1 w-44 h-24 rounded-3xl">
+            <div class="absolute h-full w-full flex flex-col justify-start items-start px-5 py-4 gap-1">
+              <div class="text-black text-lg font-bold tracking-wide leading-none">
+                <p class="">Ticket</p>
+                <p class="">Purchase Guide</p>
+              </div>
+              <div class="text-xs font-normal">
+                <p class="">チケット購入</p>
+                <p class="">ガイド</p>
+              </div>
+            </div>
+            <div class="bannerTransformOpacityArrowHoverEffectArrow absolute right-2.5 bottom-2.5 rounded-full w-6 h-6 bg-red-700 flex justify-center items-center">
+              <svg width="30px" height="30px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+            </div>
+          </div>
+        </div>
+        <div class="bannerTransformOpacityArrowHoverEffect w-full h-full relative flex justify-center items-center">
+          <div class="absolute top-4 rounded-3xl w-44 h-28 z-0 overflow-hidden">
+            <img class="w-full h-full object-cover" src="../src/pic/bg-card.webp" alt="bg-card">
+          </div>
+          <div class="absolute top-0 bg-white relative z-1 w-44 h-24 rounded-3xl">
+            <div class="absolute h-full w-full flex flex-col justify-start items-start px-5 py-3 gap-1">
+              <div class="text-black text-base font-bold tracking-wide leading-none">
+                <p class="">Memorial Ticket</p>
+                <p class="">Online Store</p>
+              </div>
+              <div class="text-xs font-normal">
+                <p class="">記念チケット</p>
+                <p class="">オンラインストア</p>
+              </div>
+            </div>
+            <div class="bannerTransformOpacityArrowHoverEffectArrow absolute right-2.5 bottom-2.5 rounded-full w-6 h-6 bg-black flex justify-center items-center">
+              <svg width="30px" height="30px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<!-- Join participate in the expo-->
+<div class="relative flex w-full overflow-hidden" style="height: 700px">
+  
+  <div class="joinParticipateVideo absolute top-0 right-0 w-full h-full overflow-hidden">
+    <video autoplay loop muted playsinline class="w-full h-full object-cover">
+      <source src="https://www.expo2025.or.jp/assets_top/movies/visit-place.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="absolute top-0 left-0 w-60 h-60">
+    <img src="../src/pic/accent-1-pc.svg" alt="banner" />
+  </div>
+  <div class="absolute top-0 left-0 w-60 h-60">
+    <img src="../src/pic/accent-2-pc.svg" alt="banner" />
+  </div>
+
+  <div id="joinParticipateExpoTitle" class="absolute top-44 left-24 w-full">
+    <div class="relative h-full w-full">
+
+      <div class="absolute bottom-0 left-0">
+        <h1 class="text-8xl font-bold text-white">JOIN</h1>
+      </div>
+
+      <div id="joinParticipateExpoSubtitle" class="absolute bottom-14 left-60 h-full">
+        <p class="text-2xl tracking-widest mb-2 font-semibold text-white">participate in the expo</p>
+        <svg class="joinParticipateExpoSubtitleSVG" width="1000" height="1" viewBox="0 0 1000 1" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="1" x2="1000" y2="1" stroke="white" stroke-width="2"/>
+        </svg>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <div id="joinParticipateExpoContainer" class="absolute top-56 left-24 flex">.
+    <div class="flex flex-col gap-3">
+
+      <div class="cardsTitle flex items-center gap-4">
+        <svg class="cardsTitleSVG" width="3" height="16" xmlns="http://www.w3.org/2000/svg">
+          <rect width="3" height="16" fill="red"/>
+        </svg>
+        <a class="cardsTitleText text-white text-2xl tracking-wide font-semibold">Co-Creation</a>
+      </div>
+
+      <div id="joinParticipateExpoCoCreation" class="grid grid-cols-3 gap-3">
+
+        <div class="zoomInBanner w-full h-full relative flex justify-center" style="width: 270px; height: 380px">
+          <div class="bannerTransformArrowHoverEffect absolute top-0 bg-white relative z-1 rounded-2xl overflow-hidden" style="width: 270px; height: 270px">
+            <img class="w-full h-full object-cover"src="../src/pic/img-bestpractice-pc.webp" alt="banner">
+
+            <div class="bannerTransformArrowHoverEffectArrow absolute right-0 top-0">
+              <svg width="60px" height="60px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+            </div>
+          </div>
+
+          <div class="absolute bottom-0" style="width: 250px; height: 100px">
+            <p class="text-white text-sm leading-normal">High-Quality Projects to Solve Critical Global Issues</p>
+          </div>
+        </div>
+
+        <div class="zoomInBanner w-full h-full relative flex justify-center" style="width: 270px; height: 380px">
+          <div class="bannerTransformArrowHoverEffect absolute top-0 bg-white relative z-1 rounded-2xl overflow-hidden" style="width: 270px; height: 270px">
+            <img class="w-full h-full object-cover"src="../src/pic/img-challenge-pc.webp" alt="banner">
+
+            <div class="bannerTransformArrowHoverEffectArrow absolute right-0 top-0">
+              <svg width="60px" height="60px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+            </div>
+          </div>
+          <div class="absolute bottom-0" style="width: 250px; height: 100px">
+            <p class="text-white text-sm leading-normal">Design "the future" together with 4 creators</p>
+          </div>
+        </div>
+
+        <div class="zoomInBanner w-full h-full relative flex justify-center" style="width: 270px; height: 380px">
+          <div class="bannerTransformArrowHoverEffect absolute top-0 bg-white relative z-1 rounded-2xl overflow-hidden" style="width: 270px; height: 270px">
+            <img class="w-full h-full object-cover"src="../src/pic/img-expo-pc.webp" alt="banner">
+
+            <div class="bannerTransformArrowHoverEffectArrow absolute right-0 top-0">
+              <svg width="60px" height="60px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+            </div>
+          </div>
+          <div class="absolute bottom-0" style="width: 250px; height: 100px">
+            <p class="text-white text-sm leading-normal">Not just for viewing, become the protagonist at the World Expo</p>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+<!-- Link -->
+<div class="flex flex-col p-8 overflow-hidden">
+  <!-- Link第一行 -->
+  <div class=" flex flex-row mb-4 gap-28">
+    <div class="w-48">
+      <h1 class="text-4xl tracking-wide font-semibold">LINK</h1>
+    </div>
+    <div class="flex justify-center items-center">
+
+      <div class="flex flex-wrap gap-2">
+
+        <div class="flex justify-center items-center gap-3 mr-4">
+          <div class="rounded-full w-4 h-4 bg-red-600 flex justify-center items-center">
+            <svg width="20px" height="20px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="white" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+          </div>
+          <p class="text-sm font-thin">KEIDANREN (Japan Business Federation)</p>
+        </div>
+          
+        <div class="flex justify-center items-center gap-3 mr-4">
+          <div class="rounded-full w-4 h-4 bg-red-600 flex justify-center items-center">
+            <svg width="20px" height="20px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="white" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+          </div>
+          <p class="text-sm font-thin" >Kansai Economic Federation</p>
+        </div>
+
+        <div class="flex justify-center items-center gap-3 mr-4">
+          <div class="rounded-full w-4 h-4 bg-red-600 flex justify-center items-center">
+            <svg width="20px" height="20px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="white" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+          </div>
+          <p class="text-sm font-thin" >Osaka Chamber of Commerce and Industry</p>
+        </div>
+
+        <div class="flex justify-center items-center mr-4">
+          <img class="w-[200px] h-[25px]" src="../src/pic/img-1.webp" alt="LinkComponents" />
+        </div>
+        
+        <div class="flex justify-center items-center gap-3 mr-4">
+          <div class="rounded-full w-4 h-4 bg-red-600 flex justify-center items-center">
+            <svg width="20px" height="20px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="white" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+          </div>
+          <p class="text-sm font-thin">Kansai Association of Corporate Executives Executives</p>
+        </div>
+
+        <div class="flex justify-center items-center gap-3 mr-4">
+          <div class="rounded-full w-4 h-4 bg-red-600 flex justify-center items-center">
+            <svg width="20px" height="20px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="white" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+          </div>
+          <p class="text-sm font-thin">Kyoto Chamber of Commerce and Industry</p>
+        </div>
+
+        <div class="flex justify-center items-center gap-3 mr-4">
+          <div class="rounded-full w-4 h-4 bg-red-600 flex justify-center items-center">
+            <svg width="20px" height="20px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="white" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+          </div>
+          <p class="text-sm font-thin">Kobe Chamber of Commerce and Industry</p>
+        </div>
+
+        <div class="flex justify-center items-center mr-4">
+          <img class="w-[200px] h-[25px]" src="../src/pic/img-2.webp" alt="LinkComponents" />
+        </div>
+
+        <div class="flex justify-center items-center gap-3 mr-4">
+          <div class="rounded-full w-4 h-4 bg-red-600 flex justify-center items-center">
+            <svg width="20px" height="20px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="white" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+          </div>
+          <p class="text-sm font-thin">Japan Chamber of Commerce and Industry</p>
+        </div>
+
+        <div class="flex justify-center items-center gap-3 mr-4">
+          <div class="rounded-full w-4 h-4 bg-red-600 flex justify-center items-center">
+            <svg width="20px" height="20px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="white" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+          </div>
+          <p class="text-sm font-thin">Japan Association of Corporate Executives</p>
+        </div>
+
+        <div class="flex justify-center items-center gap-3 mr-4">
+          <div class="rounded-full w-4 h-4 bg-red-600 flex justify-center items-center">
+            <svg width="20px" height="20px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="white" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+          </div>
+          <p class="text-sm font-thin">Osaka Prefecture</p>
+        </div>
+
+        <div class="flex justify-center items-center mr-4">
+          <img class="w-[200px] h-[25px]" src="../src/pic/img-3.webp" alt="LinkComponents" />
+        </div>
+
+        <div class="flex justify-center items-center gap-3 mr-4">
+          <div class="rounded-full w-4 h-4 bg-red-600 flex justify-center items-center">
+            <svg width="20px" height="20px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="white" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+          </div>
+          <p class="text-sm font-thin">Osaka City</p>
+        </div>
+
+        <div class="flex justify-center items-center gap-3 mr-4">
+          <div class="rounded-full w-4 h-4 bg-red-600 flex justify-center items-center">
+            <svg width="20px" height="20px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="white" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+          </div>
+          <p class="text-sm font-thin">Union of Kansai Governments</p>
+        </div>
+
+        <div class="flex justify-center items-center gap-3 mr-4">
+          <div class="rounded-full w-4 h-4 bg-red-600 flex justify-center items-center">
+            <svg width="20px" height="20px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="white" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12-6-6m6 6-6 6m6-6H5"></path></g></svg>
+          </div>
+          <p class="text-sm font-thin">Ministry of Foreign Affairs</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="opacityHoverEffect w-full mb-5 flex justify-center items-center" style="background-color:#b9d5e2";">
+    <img src="../src/pic/img-cycle.webp" alt="link cycle" />
+  </div>
+  <div id="LearnMoreBIE" class="opacityHoverEffect bg-blue-700 flex flex-row justify-center items-center px-40 py-10">
+    <div class="basis-1/2">
+      <img src="../src/pic/img-bie.webp" alt="Bureau Internatioal des Exposition" style="width: 70%; height: 70%"/>
+    </div>
+    <div class="basis-1/2 text-white">
+      <a>The BIE is the Intergovernmental Organisation in charge of overseeing and regulating all international exhibitions that last more than three weeks and are of non commercial nature ("Expos"). Today, 4 types of Expos are organised under its auspices: World Expos, Specialised Expos, Horticultural Expos and the Triennale di Milano.</a>
+      <br><br>
+      <a>Learn more about BIE</a>
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="relative overflow-x-hidden" style="width: auto; height: auto;">
+  
+  <div style="width: 150%; height: auto;"> 
+    <picture>
+      <source srcset="data:image/svg+xml,%3c?xml%20version=&#39;1.0&#39;%20encoding=&#39;utf-8&#39;?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2028.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20version=&#39;1.1&#39;%20id=&#39;レイヤー_1&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20xmlns:xlink=&#39;http://www.w3.org/1999/xlink&#39;%20x=&#39;0px&#39;%20y=&#39;0px&#39;%20viewBox=&#39;0%200%202520%201428&#39;%20enable-background=&#39;new%200%200%202520%201428&#39;%20xml:space=&#39;preserve&#39;%3e%3cg%3e%3cdefs%3e%3crect%20id=&#39;SVGID_1_&#39;%20y=&#39;2&#39;%20width=&#39;2520&#39;%20height=&#39;1426&#39;/%3e%3c/defs%3e%3cclipPath%20id=&#39;SVGID_00000111159448139950368010000005051642866444443548_&#39;%3e%3cuse%20xlink:href=&#39;%23SVGID_1_&#39;%20overflow=&#39;visible&#39;/%3e%3c/clipPath%3e%3cg%20clip-path=&#39;url(%23SVGID_00000111159448139950368010000005051642866444443548_)&#39;%3e%3ccircle%20fill=&#39;%23D2D7DA&#39;%20cx=&#39;1512&#39;%20cy=&#39;572&#39;%20r=&#39;552.6&#39;/%3e%3cpath%20fill=&#39;%23D2D7DA&#39;%20d=&#39;M1851.2,135.7c186.7,160.1,470.5,216.5,688.8,34.7V1398h-245.2l-852.1-273.3L1851.2,135.7z&#39;/%3e%3c/g%3e%3cg%20clip-path=&#39;url(%23SVGID_00000111159448139950368010000005051642866444443548_)&#39;%3e%3ccircle%20fill=&#39;%23E60012&#39;%20cx=&#39;1530&#39;%20cy=&#39;388&#39;%20r=&#39;249.3&#39;/%3e%3cpath%20fill=&#39;%23E60012&#39;%20d=&#39;M1683.4,191.5c11.8,16.5,152,111.6,281,13.1l-207.3,286.3L1683.4,191.5z&#39;/%3e%3c/g%3e%3cg%20clip-path=&#39;url(%23SVGID_00000111159448139950368010000005051642866444443548_)&#39;%3e%3ccircle%20fill=&#39;%230068B7&#39;%20cx=&#39;2202.1&#39;%20cy=&#39;201.4&#39;%20r=&#39;199.4&#39;/%3e%3ccircle%20fill=&#39;%230068B7&#39;%20cx=&#39;904&#39;%20cy=&#39;1230.1&#39;%20r=&#39;1153.9&#39;/%3e%3cpath%20fill=&#39;%230068B7&#39;%20d=&#39;M1462.1,219.9c333.1,183.1,522.3-13.6,559.3-103l242.3,274.3c0,0-367.2,68.9-225.9,623.1&#39;/%3e%3c/g%3e%3cg%20clip-path=&#39;url(%23SVGID_00000111159448139950368010000005051642866444443548_)&#39;%3e%3ccircle%20fill=&#39;%23E60012&#39;%20cx=&#39;2047.3&#39;%20cy=&#39;590.6&#39;%20r=&#39;199.4&#39;/%3e%3ccircle%20fill=&#39;%23E60012&#39;%20cx=&#39;1984.4&#39;%20cy=&#39;1398&#39;%20r=&#39;310.4&#39;/%3e%3cpath%20fill=&#39;%23E60012&#39;%20d=&#39;M2184.5,445.9c188.1,144.7,338.1,723.3,52.7,1132.2l-413.7-445.5c0,0,232-143.3,72.1-412.4L2184.5,445.9z&#39;%20/%3e%3c/g%3e%3cg%20clip-path=&#39;url(%23SVGID_00000111159448139950368010000005051642866444443548_)&#39;%3e%3ccircle%20fill=&#39;%23E60012&#39;%20cx=&#39;398.6&#39;%20cy=&#39;397.5&#39;%20r=&#39;310.4&#39;/%3e%3cpath%20fill=&#39;%23E60012&#39;%20d=&#39;M-405.6,859.6c46.7-162.6,256-691.2,755.3-768.6l-25.1,608c0,0-265.3-62.7-342.6,240.6L-405.6,859.6z&#39;/%3e%3c/g%3e%3cpath%20clip-path=&#39;url(%23SVGID_00000111159448139950368010000005051642866444443548_)&#39;%20fill=&#39;%23D2D7DA&#39;%20d=&#39;M245.8,675.2%20c94.2,126.5-88.4,260.5-5.4,351.6c49.1,53.8,171.6,13.3,289.4,61.6c127.7,52.3,246.6,196.4,170.2,339.6H-40V689.3%20C-40,689.3,141.4,535.1,245.8,675.2z&#39;/%3e%3c/g%3e%3c/svg%3e " media="(mix-width: 769px)" width="2560" height="1428">
+      <source srcset="data:image/svg+xml,%3c?xml%20version=&#39;1.0&#39;%20encoding=&#39;utf-8&#39;?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2028.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20version=&#39;1.1&#39;%20id=&#39;レイヤー_1&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20xmlns:xlink=&#39;http://www.w3.org/1999/xlink&#39;%20x=&#39;0px&#39;%20y=&#39;0px&#39;%20viewBox=&#39;0%200%20750%205969&#39;%20enable-background=&#39;new%200%200%20750%205969&#39;%20xml:space=&#39;preserve&#39;%3e%3cg%3e%3cdefs%3e%3crect%20id=&#39;SVGID_1_&#39;%20width=&#39;750&#39;%20height=&#39;5969.9&#39;/%3e%3c/defs%3e%3cclipPath%20id=&#39;SVGID_00000124154768165223674100000001963274635295600302_&#39;%3e%3cuse%20xlink:href=&#39;%23SVGID_1_&#39;%20overflow=&#39;visible&#39;/%3e%3c/clipPath%3e%3ccircle%20clip-path=&#39;url(%23SVGID_00000124154768165223674100000001963274635295600302_)&#39;%20fill=&#39;%23D2D7DA&#39;%20cx=&#39;600&#39;%20cy=&#39;562.6&#39;%20r=&#39;552.6&#39;/%3e%3cg%20clip-path=&#39;url(%23SVGID_00000124154768165223674100000001963274635295600302_)&#39;%3e%3ccircle%20fill=&#39;%23E60012&#39;%20cx=&#39;618&#39;%20cy=&#39;378.6&#39;%20r=&#39;249.3&#39;/%3e%3cpath%20fill=&#39;%23E60012&#39;%20d=&#39;M771.4,182.1c11.8,16.5,152,111.6,281,13.1L845.1,481.4L771.4,182.1z&#39;/%3e%3c/g%3e%3cg%20clip-path=&#39;url(%23SVGID_00000124154768165223674100000001963274635295600302_)&#39;%3e%3ccircle%20fill=&#39;%230068B7&#39;%20cx=&#39;1290.1&#39;%20cy=&#39;192&#39;%20r=&#39;199.4&#39;/%3e%3crect%20y=&#39;2031.2&#39;%20fill=&#39;%230068B7&#39;%20width=&#39;750&#39;%20height=&#39;5968.8&#39;/%3e%3ccircle%20fill=&#39;%230068B7&#39;%20cx=&#39;-8&#39;%20cy=&#39;1220.7&#39;%20r=&#39;1153.9&#39;/%3e%3cg%3e%3ccircle%20fill=&#39;%23E60012&#39;%20cx=&#39;-804.5&#39;%20cy=&#39;1256.6&#39;%20r=&#39;199.4&#39;/%3e%3ccircle%20fill=&#39;%23E60012&#39;%20cx=&#39;-189.1&#39;%20cy=&#39;730.2&#39;%20r=&#39;310.4&#39;/%3e%3cpath%20fill=&#39;%23E60012&#39;%20d=&#39;M-993.3,1192.3c46.7-162.6,256-691.2,755.3-768.6l-25.1,608c0,0-265.3-62.7-342.6,240.6L-993.3,1192.3z&#39;%20/%3e%3c/g%3e%3cpath%20fill=&#39;%230068B7&#39;%20d=&#39;M550.1,210.5c333.1,183.1,522.3-13.6,559.3-103l242.3,274.3c0,0-367.2,68.9-225.9,623.1&#39;/%3e%3c/g%3e%3cg%20clip-path=&#39;url(%23SVGID_00000124154768165223674100000001963274635295600302_)&#39;%3e%3ccircle%20fill=&#39;%23E60012&#39;%20cx=&#39;817.5&#39;%20cy=&#39;2993.3&#39;%20r=&#39;199.4&#39;/%3e%3ccircle%20fill=&#39;%23E60012&#39;%20cx=&#39;754.5&#39;%20cy=&#39;3800.7&#39;%20r=&#39;310.4&#39;/%3e%3cpath%20fill=&#39;%23E60012&#39;%20d=&#39;M954.7,2848.6c188.1,144.7,338.1,723.3,52.7,1132.2l-413.7-445.5c0,0,232-143.3,72.1-412.4L954.7,2848.6z&#39;%20/%3e%3c/g%3e%3cpath%20clip-path=&#39;url(%23SVGID_00000124154768165223674100000001963274635295600302_)&#39;%20fill=&#39;%23D2D7DA&#39;%20d=&#39;M-204,5277.1%20c94.2,126.5-88.4,260.5-5.4,351.6c49.1,53.8,171.6,13.3,289.4,61.6c127.7,52.3,246.6,196.4,170.2,339.6h-740v-738.7%20C-489.8,5291.2-308.4,5137-204,5277.1z&#39;/%3e%3c/g%3e%3c/svg%3e " media="(max-width: 768px)" width="750" height="5969"><img src="data:image/svg+xml,%3c?xml%20version=%271.0%27%20encoding=%27utf-8%27?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2028.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20version=%271.1%27%20id=%27%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC_1%27%20xmlns=%27http://www.w3.org/2000/svg%27%20xmlns:xlink=%27http://www.w3.org/1999/xlink%27%20x=%270px%27%20y=%270px%27%20viewBox=%270%200%202520%201428%27%20enable-background=%27new%200%200%202520%201428%27%20xml:space=%27preserve%27%3e%3cg%3e%3cdefs%3e%3crect%20id=%27SVGID_1_%27%20y=%272%27%20width=%272520%27%20height=%271426%27/%3e%3c/defs%3e%3cclipPath%20id=%27SVGID_00000111159448139950368010000005051642866444443548_%27%3e%3cuse%20xlink:href=%27%23SVGID_1_%27%20overflow=%27visible%27/%3e%3c/clipPath%3e%3cg%20clip-path=%27url(%23SVGID_00000111159448139950368010000005051642866444443548_)%27%3e%3ccircle%20fill=%27%23D2D7DA%27%20cx=%271512%27%20cy=%27572%27%20r=%27552.6%27/%3e%3cpath%20fill=%27%23D2D7DA%27%20d=%27M1851.2,135.7c186.7,160.1,470.5,216.5,688.8,34.7V1398h-245.2l-852.1-273.3L1851.2,135.7z%27/%3e%3c/g%3e%3cg%20clip-path=%27url(%23SVGID_00000111159448139950368010000005051642866444443548_)%27%3e%3ccircle%20fill=%27%23E60012%27%20cx=%271530%27%20cy=%27388%27%20r=%27249.3%27/%3e%3cpath%20fill=%27%23E60012%27%20d=%27M1683.4,191.5c11.8,16.5,152,111.6,281,13.1l-207.3,286.3L1683.4,191.5z%27/%3e%3c/g%3e%3cg%20clip-path=%27url(%23SVGID_00000111159448139950368010000005051642866444443548_)%27%3e%3ccircle%20fill=%27%230068B7%27%20cx=%272202.1%27%20cy=%27201.4%27%20r=%27199.4%27/%3e%3ccircle%20fill=%27%230068B7%27%20cx=%27904%27%20cy=%271230.1%27%20r=%271153.9%27/%3e%3cpath%20fill=%27%230068B7%27%20d=%27M1462.1,219.9c333.1,183.1,522.3-13.6,559.3-103l242.3,274.3c0,0-367.2,68.9-225.9,623.1%27/%3e%3c/g%3e%3cg%20clip-path=%27url(%23SVGID_00000111159448139950368010000005051642866444443548_)%27%3e%3ccircle%20fill=%27%23E60012%27%20cx=%272047.3%27%20cy=%27590.6%27%20r=%27199.4%27/%3e%3ccircle%20fill=%27%23E60012%27%20cx=%271984.4%27%20cy=%271398%27%20r=%27310.4%27/%3e%3cpath%20fill=%27%23E60012%27%20d=%27M2184.5,445.9c188.1,144.7,338.1,723.3,52.7,1132.2l-413.7-445.5c0,0,232-143.3,72.1-412.4L2184.5,445.9z%27%20/%3e%3c/g%3e%3cg%20clip-path=%27url(%23SVGID_00000111159448139950368010000005051642866444443548_)%27%3e%3ccircle%20fill=%27%23E60012%27%20cx=%27398.6%27%20cy=%27397.5%27%20r=%27310.4%27/%3e%3cpath%20fill=%27%23E60012%27%20d=%27M-405.6,859.6c46.7-162.6,256-691.2,755.3-768.6l-25.1,608c0,0-265.3-62.7-342.6,240.6L-405.6,859.6z%27/%3e%3c/g%3e%3cpath%20clip-path=%27url(%23SVGID_00000111159448139950368010000005051642866444443548_)%27%20fill=%27%23D2D7DA%27%20d=%27M245.8,675.2%20c94.2,126.5-88.4,260.5-5.4,351.6c49.1,53.8,171.6,13.3,289.4,61.6c127.7,52.3,246.6,196.4,170.2,339.6H-40V689.3%20C-40,689.3,141.4,535.1,245.8,675.2z%27/%3e%3c/g%3e%3c/svg%3e" loading="lazy" alt="EXPO2025" width="2560" height="1428">
+    </picture>
+  </div>
+
+  <div class="absolute top-4 right-10">
+    <button onclick="scrollToTop()" class="bg-red-500 rounded-full flex justify-center items-center w-14 h-14">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 16V4" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6 10L12 4L18 10" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <div id="footerContain" class="absolute top-56 left-28 z-30 grid grid-cols-4 gap-1" style="height:auto; width: 1200px;">
+
+    <div class="flex flex-col text-black">
+      <h1 class="footerTitle text-3xl font-bold text-white">NEWS</h1>
+      <div class="my-2">
+        <svg class="footerTitleSVG" width="170" height="2" viewBox="0 0 1000 1" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="1" x2="1000" y2="1" stroke="white" stroke-width="5"/>
+        </svg>
+      </div>
+      <div>
+        <div class="flex items-center gap-1 mt-2">
+          <svg class="footerSubtitleSVG" width="4" height="10" xmlns="http://www.w3.org/2000/svg">
+            <rect width="4" height="10" fill="white"/>
+          </svg>
+          <a class="footerSubtitle text-sm text-white tracking-wide font-medium">News</a>
+        </div>
+        <div class="footerText flex flex-col pl-2 mt-1 text-xs text-white gap-2" >
+          <a>News</a>
+          <a>What's New</a>
+          <a>Press Release</a>
+          <a>Activity Report</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col text-black">
+      <h1 class="footerTitle text-3xl font-bold text-white">ENJOY</h1>
+      <div class="my-2">
+        <svg class="footerTitleSVG" width="170" height="2" viewBox="0 0 1000 1" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="1" x2="1000" y2="1" stroke="white" stroke-width="5"/>
+        </svg>
+      </div>
+      <div>
+        <div class="flex items-center gap-1 mt-2">
+          <svg class="footerSubtitleSVG" width="4" height="10" xmlns="http://www.w3.org/2000/svg">
+            <rect width="4" height="10" fill="white"/>
+          </svg>
+          <a class="footerSubtitle text-sm text-white tracking-wide font-medium">Pavilions</a>
+        </div>
+        <div class="footerText flex flex-col pl-2 mt-1 text-xs text-white gap-2" >
+          <a>Signature Pavilion</a>
+          <a>Participants' Pavilion</a>
+          <a>Domestic Pavilion</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="flex items-center gap-1 mt-2">
+          <svg class="footerSubtitleSVG" width="4" height="10" xmlns="http://www.w3.org/2000/svg">
+            <rect width="4" height="10" fill="white"/>
+          </svg>
+          <a class="footerSubtitle text-sm text-white tracking-wide font-medium">Future Society Showcase</a>
+        </div>
+        <div class="footerText flex flex-col pl-2 mt-1 text-xs text-white gap-2" >
+          <a>About Future Society</a>
+          <a>Showcase</a>
+          <a>Virtual Site</a>
+          <a>Electric Buses</a>
+          <a>Future City</a>
+          <a>Advanced Air Mobility</a>
+          <a>Personal Agent</a>
+          <a>Water Show</a>
+          <a>Automatic Translation</a>
+          <a>System</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="flex items-center gap-1 mt-2">
+          <svg class="footerSubtitleSVG" width="4" height="10" xmlns="http://www.w3.org/2000/svg">
+            <rect width="4" height="10" fill="white"/>
+          </svg>
+          <a class="footerSubtitle text-sm text-white tracking-wide font-medium">SDGs+beyond</a>
+        </div>
+        <div class="footerText flex flex-col pl-2 mt-1 text-xs text-white gap-2" >
+          <a>Theme Weeks</a>
+          <a>Sustinabillity</a>
+          <a>Cashless</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="flex items-center gap-1 mt-2">
+          <svg class="footerSubtitleSVG" width="4" height="10" xmlns="http://www.w3.org/2000/svg">
+            <rect width="4" height="10" fill="white"/>
+          </svg>
+          <a class="footerSubtitle text-sm text-white tracking-wide font-medium">Music</a>
+        </div>
+        <div class="footerText flex flex-col pl-2 mt-1 text-xs text-white gap-2" >
+          <a>Official Theme Song</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="flex flex-col text-black">
+      <h1 class="footerTitle text-3xl font-bold text-white">VISIT</h1>
+      <div class="my-2">
+        <svg class="footerTitleSVG" width="170" height="2" viewBox="0 0 1000 1" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="1" x2="1000" y2="1" stroke="white" stroke-width="5"/>
+        </svg>
+      </div>
+      <div>
+        <div class="flex items-center gap-1 mt-2">
+          <svg class="footerSubtitleSVG" width="4" height="10" xmlns="http://www.w3.org/2000/svg">
+            <rect width="4" height="10" fill="white"/>
+          </svg>
+          <a class="footerSubtitle text-sm text-white tracking-wide font-medium">Expo Site Map</a>
+        </div>
+        <div class="footerText flex flex-col pl-2 mt-1 text-xs text-white gap-2" >
+          <a>Expo Site Map</a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-1 mt-2">
+          <svg class="footerSubtitleSVG" width="4" height="10" xmlns="http://www.w3.org/2000/svg">
+            <rect width="4" height="10" fill="white"/>
+          </svg>
+          <a class="footerSubtitle text-sm text-white tracking-wide font-medium">Tickets Information</a>
+        </div>
+        <div class="footerText flex flex-col pl-2 mt-1 text-xs text-white gap-2" >
+          <a>Tickets Information</a>
+          <a>Type & Price</a>
+          <a>Ticket Purchase Guide</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col text-black">
+      <h1 class="footerTitle text-3xl font-bold text-white">JOIN</h1>
+      <div class="my-2">
+        <svg class="footerTitleSVG" width="170" height="2" viewBox="0 0 1000 1" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="1" x2="1000" y2="1" stroke="white" stroke-width="5"/>
+        </svg>
+      </div>
+      <div>
+        <div class="flex items-center gap-1 mt-2">
+          <svg class="footerSubtitleSVG" width="4" height="10" xmlns="http://www.w3.org/2000/svg">
+            <rect width="4" height="10" fill="white"/>
+          </svg>
+          <a class="footerSubtitle text-sm text-white tracking-wide font-medium">Co-creation</a>
+        </div>
+        <div class="footerText flex flex-col pl-2 mt-1 text-xs text-white gap-2" >
+          <a>Best Practice</a>
+          <a>Co-Design-Challenge</a>
+          <a>TEAM EXPO 2025</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col text-black">
+      <h1 class="footerTitle text-sm font-bold text-white">Understanding Expo</h1>
+      <div class="my-2">
+        <svg class="footerTitleSVG" width="170" height="2" viewBox="0 0 1000 1" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="1" x2="1000" y2="1" stroke="white" stroke-width="5"/>
+        </svg>
+      </div>
+      <div class="footerText flex flex-col pl-2 mt-1 text-xs text-white gap-2" >
+        <a>Overview</a>
+        <a>Purpose</a>
+        <a>MOVIE</a>
+        <a>Master Plan</a>
+        <a>Logo</a>
+        <a>Official character</a>
+        <a>Official Theme Song</a>
+        <a>Producers</a>
+        <a>Thematic Project</a>
+        <a>Ambassadors</a>
+        <a>Design System</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="absolute left-10 bottom-10 flex flex-row justify-center items-center gap-2">
+    <div class="flex justify-center items-center bg-white h-8 w-28 rounded-full">
+      <a class="text-black text-xxs" href="https://www.expo2025.or.jp/en/inquiry/">Inquiries</a>
+    </div>
+    <div class="flex justify-center items-center h-8 w-28">
+      <a class="text-white text-sm">Privacy policy</a>
+    </div>
+  </div>
+
+  <div class="absolute left-10 bottom-4 flex flex-row justify-center items-center">
+    <a class="text-white text-xxs" href="https://www.expo2025.or.jp/en/inquiry/"> ©Copyright Japan Association for the 2025 World Exposition, All rights reserved.</a>
+  </div>
+
+  <div class="absolute right-12 bottom-10 flex flex-row justify-center items-center gap-6">
+    <div class="sizeHoverEffect flex justify-between items-center">
+      <svg width="30px" height="30px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#ffffff" d="M15 8a7 7 0 00-7-7 7 7 0 00-1.094 13.915v-4.892H5.13V8h1.777V6.458c0-1.754 1.045-2.724 2.644-2.724.766 0 1.567.137 1.567.137v1.723h-.883c-.87 0-1.14.54-1.14 1.093V8h1.941l-.31 2.023H9.094v4.892A7.001 7.001 0 0015 8z"></path></g></svg>
+    </div>
+    <div class="sizeHoverEffect flex justify-center items-center">
+      <?xml version="1.0" ?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" width="30px" height="30px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve"><path fill="#FFFFFF" d="M14.095479,10.316482L22.286354,1h-1.940718l-7.115352,8.087682L7.551414,1H1l8.589488,12.231093L1,23h1.940717  l7.509372-8.542861L16.448587,23H23L14.095479,10.316482z M11.436522,13.338465l-0.871624-1.218704l-6.924311-9.68815h2.981339  l5.58978,7.82155l0.867949,1.218704l7.26506,10.166271h-2.981339L11.436522,13.338465z"/></svg>
+    </div>
+    <div class="sizeHoverEffect flex justify-center items-center">
+      <svg fill="#ffffff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" viewBox="0 0 169.063 169.063" xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752 c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407 c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752 c17.455,0,31.656,14.201,31.656,31.655V122.407z"></path> <path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561 C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561 c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z"></path> <path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78 c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78 C135.661,29.421,132.821,28.251,129.921,28.251z"></path> </g> </g></svg>
+    </div>
+    <div class="sizeHoverEffect flex justify-center items-center">
+      <svg width="30px" height="30px" viewBox="0 -3 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>youtube [#ffffff]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7442.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289" id="youtube-[#ffffff]"> </path> </g> </g> </g> </g></svg>
+    </div>
+  </div>
+
+
+</footer>
+
+  
+
+<script src="./index.js"></script>
+</body>
