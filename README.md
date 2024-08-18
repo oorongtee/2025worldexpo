@@ -13,6 +13,7 @@
 除此之外，做了768畫面寬度的RWD，但與原網站有些許不同，無法完全一致。
 ![螢幕擷取畫面 2024-08-18 204840](https://github.com/user-attachments/assets/d0e96f29-043f-4cbb-ab98-93f5706fdcad)
 > 滑鼠碰觸不同卡片會有不同動畫效果，參考自2025年於大阪的世界博覽會網站
+
 ![螢幕擷取畫面 2024-08-18 205848](https://github.com/user-attachments/assets/18754a55-25d6-4444-bd27-7029db3c1ced)
 > RWD 768螢幕寬度外觀
 
