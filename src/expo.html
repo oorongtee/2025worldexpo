@@ -36,7 +36,7 @@
         <div class="footerUnderstandingExpo flex flex-col items-center justify-center py-6 relative">
           <a class="text-xxs text-black whitespace-nowrap" href="https://www.cyberpunk.net/us/zh-tw/">Understanding Expo</a>
           <!-- 偽元素-->
-          <div class="footerUnderstandingExpoBox z-30 bg-white hidden absolute top-full left-0">
+          <div class="footerUnderstandingExpoBox z-30 bg-white absolute top-full left-0 hidden">
             <div class="flex flex-col gap-2 mx-2 my-4 w-40">
               <div class="flex flex-row justify-between items-center">
                 <p class="text-xxs">Overview</p>
@@ -56,7 +56,7 @@
         <div class="footerAboutTheAssociation flex flex-col items-center justify-center py-6 relative">
           <a class="text-xxs text-black whitespace-nowrap" href="https://www.cyberpunk.net/us/zh-tw/">About the Association</a>
           <!-- 偽元素-->
-          <div class="aboutTheAsscioationBox z-30 bg-white hidden absolute top-full left-0">
+          <div class="aboutTheAsscioationBox z-30 bg-white absolute top-full left-0 hidden">
             <div class="flex flex-col gap-2 mx-2 my-4 w-40">
               <div class="flex flex-row justify-between items-center">
                 <p class="text-xxs">Overview</p>
@@ -96,7 +96,7 @@
             </div>
           </a>
           <!-- 偽元素-->
-          <div class="ticketsBox z-30 absolute top-full right-1 hidden">
+          <div class="ticketsBox z-30 absolute top-full right-0 hidden">
             <div class="flex flex-col justify-center items-center">
               <svg fill="#000000" width="8px" height="8px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M21,21H3L12,3Z"></path></g></svg>
               <div class="bg-black text-white text-xxs h-4 w-10 flex justify-center items-center">
@@ -182,7 +182,6 @@
       <a>Location: ©átoa (Kobe-City, Hyogo)</a>
     </div>
   </div>
-
   <!-- 左下角的scroll-->
   <div id="homeScroll" class="absolute left-6 bottom-24 z-3 w-10 h-10 rotate-90">
     <div class="flex flex-row justify-center items-end h-full w-full">
@@ -196,10 +195,8 @@
       </div>
     </div>
   </div>
-
   <!-- 右下的圖卡輪流撥放-->
   <div id="homebannerCards" class="zoomInBanner absolute right-60 bottom-10 z-3 w-80 h-60">
-
     <div class="bannerCards relative h-full w-full ">
       <div id="bannerCard1" class="bannerTransformShadowHoverEffect bannerCard absolute w-72 h-52 customBoxShadow">
         <img class="w-full h-full object-cover"src="../src/pic/banpaku-en.webp" alt="bannerCard1">
@@ -208,12 +205,9 @@
         <img class="w-full h-full object-cover"src="../src/pic/online-store-en.webp" alt="bannerCard2">
       </div>
     </div>
-
   </div>
-
   <!-- 紅色的tickets information-->
   <div id="homebannerTicketInformation" class="zoomInBanner absolute top-36 right-24 z-30 w-60 h-36 grid grid-cols-4 gap-3">
-    
     <div id="homebannerTicketInformationCard" class="col-span-3 col-start-1">
       <div class="w-full h-full rounded-l-3xl rounded-br-3xl customBoxShadow flex flex-col justify-center items-center py-4 " style="background-color: #f1120e; opacity: 0.7;">
         <img id="homebannerTicketInformationImg" class="w-16 h-16"src="../src/pic/ico.svg" alt="bannerCard1">
@@ -223,7 +217,6 @@
         </div>
       </div>
     </div> 
-
     <div id="homebannerTicketInformationArrow" class="col-span-1 col-start-4 grid grid-rows-3">
       <div id="bannerTicketInformationArrow" class="row-start-3">
         <img id="" src="../src/pic/arrow.svg" alt="Description of image">
@@ -243,9 +236,7 @@
       (JST)
     </p>
   </div>
-
 </div>
-
 
 <!-- 主版白色新聞欄 -->
 <div id="newsContainer" class="relative h-52 w-full overflow-hidden">
@@ -254,7 +245,6 @@
     <div class="flex justify-start items-center py-3">
       <a class="text-4xl font-bold tracking-wide">NEWS</a>
     </div>
-    
     <div id="newsContainerLeftButton" class="">
       <div class="sizeOpacityHoverEffect flex justify-between items-center bg-black h-8 w-full rounded-full px-3 mb-1">
         <a class="text-white text-xxs font-semibold" href="https://www.expo2025.or.jp/en/inquiry/">Press Release list</a>
@@ -274,11 +264,8 @@
   <!-- 右-->
   <div id="newsContainerRight" class="absolute left-72 h-full w-full">
     <div class="h-full flex justify-start overflow-hidden">
-
       <div class="news-cards h-full w-full flex gap-2 pl-4">
-
         <div class="bannerTransformOpacityHoverEffect news-card w-72 h-full relative flex justify-center items-center">
-          
           <div class="news-cardPicture absolute top-1 rounded-3xl w-64 h-52 z-0 overflow-hidden">
             <img class="w-full h-full object-cover" src="../src/pic/bg-news-item.webp" alt="bg-card">
           </div>
@@ -295,11 +282,8 @@
               </div>
             </div>
           </div>
-
         </div>
-
         <div class="bannerTransformOpacityHoverEffect news-card w-72 h-full relative flex justify-center items-center">
-          
           <div class="news-cardPicture absolute top-1 rounded-3xl w-64 h-52 z-0 overflow-hidden">
             <img class="w-full h-full object-cover" src="../src/pic/bg-news-item.webp" alt="bg-card">
           </div>
@@ -316,11 +300,8 @@
               </div>
             </div>
           </div>
-
         </div>
-
         <div class="bannerTransformOpacityHoverEffect news-card w-72 h-full relative flex justify-center items-center">
-          
           <div class="news-cardPicture absolute top-1 rounded-3xl w-64 h-52 z-0 overflow-hidden">
             <img class="w-full h-full object-cover" src="../src/pic/bg-news-item.webp" alt="bg-card">
           </div>
@@ -337,11 +318,8 @@
               </div>
             </div>
           </div>
-
         </div>
-
         <div class="bannerTransformOpacityHoverEffect news-card w-72 h-full relative flex justify-center items-center">
-          
           <div class="news-cardPicture absolute top-1 rounded-3xl w-64 h-52 z-0 overflow-hidden">
             <img class="w-full h-full object-cover" src="../src/pic/bg-news-item.webp" alt="bg-card">
           </div>
@@ -358,11 +336,8 @@
               </div>
             </div>
           </div>
-
         </div>
-
         <div class="bannerTransformOpacityHoverEffect news-card w-72 h-full relative flex justify-center items-center">
-          
           <div class="news-cardPicture absolute top-1 rounded-3xl w-64 h-52 z-0 overflow-hidden">
             <img class="w-full h-full object-cover" src="../src/pic/bg-news-item.webp" alt="bg-card">
           </div>
@@ -379,10 +354,8 @@
               </div>
             </div>
           </div>
-
         </div>
         <div class="bannerTransformOpacityHoverEffect news-card w-72 h-full relative flex justify-center items-center">
-          
           <div class="news-cardPicture absolute top-1 rounded-3xl w-64 h-52 z-0 overflow-hidden">
             <img class="w-full h-full object-cover" src="../src/pic/bg-news-item.webp" alt="bg-card">
           </div>
@@ -399,10 +372,8 @@
               </div>
             </div>
           </div>
-
         </div>
         <div class="bannerTransformOpacityHoverEffect news-card w-72 h-full relative flex justify-center items-center">
-          
           <div class="news-cardPicture absolute top-1 rounded-3xl w-64 h-52 z-0 overflow-hidden">
             <img class="w-full h-full object-cover" src="../src/pic/bg-news-item.webp" alt="bg-card">
           </div>
@@ -419,10 +390,8 @@
               </div>
             </div>
           </div>
-
         </div>
         <div class="bannerTransformOpacityHoverEffect news-card w-72 h-full relative flex justify-center items-center">
-          
           <div class="news-cardPicture absolute top-1 rounded-3xl w-64 h-52 z-0 overflow-hidden">
             <img class="w-full h-full object-cover" src="../src/pic/bg-news-item.webp" alt="bg-card">
           </div>
@@ -439,9 +408,7 @@
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
     </div>
   </div>
@@ -450,13 +417,11 @@
       <svg fill="white" height="32px" width="32px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve" transform="rotate(90)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path> </g></svg>
     </div>
   </button>
-
   <button id="newsContainerRightBtn" class="right-btn absolute right-8 z-2" style="width: 64px; height: 64px; top: 4.5rem;">
     <div class="rounded-full w-full h-full bg-black bg-opacity-60 flex justify-center items-center">
       <svg fill="white" height="32px" width="32px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path> </g></svg>
     </div>
   </button>
-
   <!-- rwd的下方兩個按鈕-->
   <div id="newsBottomButton" class="hidden">
     <div class="sizeOpacityHoverEffect flex justify-between items-center bg-black h-20 w-64 rounded-full px-6">
@@ -472,31 +437,25 @@
       </div>
     </div>
   </div>
-
 </div>
 
 <!-- Enjoy Pavilions-->
 <div id="enjoyPavilions" class="relative w-full overflow-hidden" style="height: 1500px">
-  
   <div class="absolute top-0 right-0 w-full h-full overflow-hidden">
     <img class="w-full h-auto min-h-full object-cover absolute bottom-0"src="../src/pic/bg-pc.webp" alt="banner">
   </div>
-
   <div id="enjoyPavilionsBlurBanner" class="absolute left-16 w-full overflow-hidden my-14 rounded-2xl" style="height: 1388px">
     <div class="bg-white bg-opacity-30 w-full h-full" style="backdrop-filter: blur(10px);"></div>
   </div>
-
   <div class="absolute top-0 left-0 w-60 h-60">
     <img src="../src/pic/accent-1-pc.svg" alt="banner" />
   </div>
   <div class="absolute top-0 left-0 w-60 h-60">
     <img src="../src/pic/accent-2-pc.svg" alt="banner" />
   </div>
-
     <!-- Enjoy Pavilions 上面-->
   <div id="enjoyPavilionsTopContainer" class="absolute top-20 left-24 w-full flex flex-row gap-3" style="height: 360px;">
     <div id="enjoyPavilionsTopContainerLeft" class="flex flex-col justify-between">
-      
       <div class="flex flex-col w-full gap-4">
         <div class="">
           <h1 class="text-8xl font-bold text-white">ENJOY</h1>
@@ -508,18 +467,14 @@
           </svg>
         </div>
       </div>
-
       <div class="flex flex-col gap-3">
-
         <div class="cardsTitle flex items-center gap-4">
           <svg class="cardsTitleSVG" width="3" height="16" xmlns="http://www.w3.org/2000/svg">
             <rect width="100%" height="100%" fill="red"/>
           </svg>
           <a class="cardsTitleText text-white text-2xl tracking-wide font-semibold">Pavilions</a>
         </div>
-
         <div id="enjoyPavilionsTopLeftCards" class="grid grid-cols-2 gap-3">
-
           <div class="zoomInBanner w-full h-full relative">
             <div class="enjoyPavilionsTopLeftCard bannerTransformOpacityArrowHoverEffect absolute top-0 bg-white relative z-10 rounded-3xl overflow-hidden" style="width: 216px; height: 120px">
               <img class="enjoyPavilionsTopLeftCardPic object-cover"src="../src/pic/img-abroad-pc.webp" alt="banner">
@@ -528,7 +483,6 @@
               </div>
             </div>
           </div>
-
           <div class="zoomInBanner w-full h-full relative">
             <div class="enjoyPavilionsTopLeftCard bannerTransformOpacityArrowHoverEffect absolute top-0 bg-white relative z-10 rounded-3xl overflow-hidden" style="width: 216px; height: 120px">
               <img class="enjoyPavilionsTopLeftCardPic absolute w-full h-full object-cover z-30"src="../src/pic/img-s-pc.webp" alt="banner">
@@ -577,7 +531,6 @@
       </div>
     </div>
   </div>
-
 
   <!-- Enjoy Pavilions 第二行-->
   <div id="enjoyPavilionsMiddle1Container" class="absolute left-24 w-full relative overflow-hidden" style="height: 340px; top: 33%; ">
@@ -1284,7 +1237,7 @@
     </div>
 
     <div class="flex flex-col text-black">
-      <h1 class="footerTitle text-sm font-bold text-white">Understanding Expo</h1>
+      <h1 class="footerTitle text-2xl font-bold text-white">Understanding Expo</h1>
       <div class="my-2">
         <svg class="footerTitleSVG" width="170" height="2" viewBox="0 0 1000 1" xmlns="http://www.w3.org/2000/svg">
           <line x1="0" y1="1" x2="1000" y2="1" stroke="white" stroke-width="5"/>
@@ -1333,11 +1286,6 @@
       <svg width="30px" height="30px" viewBox="0 -3 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>youtube [#ffffff]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7442.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289" id="youtube-[#ffffff]"> </path> </g> </g> </g> </g></svg>
     </div>
   </div>
-
-
 </footer>
-
-  
-
 <script src="./index.js"></script>
 </body>
